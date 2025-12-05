@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketplace - Negocios en Red</title>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.svg">
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.svg">
 
      <!-- Themescript -->
 	<script src="assets/js/theme-script.js"></script>
@@ -65,182 +65,56 @@
      <div class="main-wrapper">
 
         <!-- Header -->
-        <div class="header provider-header">
+        <header class="header header-new">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg header-nav">
+				<div class="navbar-header">
+					<a id="mobile_btn" href="javascript:void(0);">>
+					</a>
+					<a href="index.html" class="navbar-brand logo">
+						<img src="assets/img/logo.jpg" class="logo" alt="Logo">
+					</a>
+					<a href="index.html" class="navbar-brand logo-small">
+						<img src="assets/img/logo.jpg" class="img-fluid" alt="Logo">
+					</a>
+				</div>
+				<div class="main-menu-wrapper">
+					<div class="menu-header">
+						<a href="index.html" class="menu-logo">
+							<img src="assets/img/logo.jpg" class="img-fluid" alt="Logo">
+						</a>
+						<a id="menu_close" class="menu-close" href="javascript:void(0);"> <i class="fas fa-times"></i></a>
+					</div>
+					<ul class="main-nav align-items-lg-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#categorias">Categorías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">Quiénes somos</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="about-us.html#como-trabajamos">¿Cómo trabajamos?</a>
+                         </li>
+						 <li class="nav-item">
+                            <a class="nav-link" href="favourites.html">Mis Pedidos</a>
+                         </li>
+                    </ul>
 
-            <!-- Logo -->
-            <div class="header-left active">
-                <a href="index.html" class="logo logo-normal">
-                    <img src="assets/img/logo.svg" alt="Logo">
-                </a>
-                <a href="index.html" class="logo-small">
-                    <img src="assets/img/logo-small.svg" alt="Logo">
-                </a>
-                <a id="toggle_btn" href="javascript:void(0);">
-                    <i class="ti ti-menu-deep"></i>
-                </a>
-            </div>
-            <!-- /Logo -->
-
-            <a id="mobile_btn" class="mobile_btn" href="#sidebar">
-                <span class="bar-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-            </a>
-
-            <div class="header-user">
-                <div class="nav user-menu">
-
-                   <div class="d-flex align-items-center">
-						<div class="provider-head-links">
-							<div>
-								<a href="javascript:void(0);" id="dark-mode-toggle" class="dark-mode-toggle me-2">
-									<i class="fa-regular fa-moon"></i>
-								</a>
-								<a href="javascript:void(0);" id="light-mode-toggle" class="dark-mode-toggle me-2">
-									<i class="ti ti-sun-filled"></i>
-								</a>
-							</div>
-						</div>
-						<div class="provider-head-links">
-							<a href="javascript:void(0);" class="d-flex align-items-center justify-content-center me-2 dropdown-toggle notify-link" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="true"><i class="feather-bell"></i></a>
-							<div class="dropdown-menu dropdown-menu-end notification-dropdown p-3">
-								<div class="d-flex dropdown-body align-items-center justify-content-between border-bottom p-0 pb-3 mb-3">
-									<h6 class="notification-title">Notificaciones <span class="fs-16 text-gray"> (2)</span></h6>
-									<div class="d-flex align-items-center">
-										<a href="#" class="text-primary fs-15 me-3 lh-1">Marcar todas como leídas</a>
-										<div class="dropdown">
-											<a href="javascript:void(0);" class="bg-white dropdown-toggle"
-												data-bs-toggle="dropdown" data-bs-auto-close="outside"><i class="ti ti-calendar-due me-1"></i>Hoy
-											</a>
-											<ul class="dropdown-menu mt-2 p-3">
-												<li>
-													<a href="javascript:void(0);" class="dropdown-item rounded-1">
-														Esta Semana
-													</a>
-												</li>
-												<li>
-													<a href="javascript:void(0);" class="dropdown-item rounded-1">
-														Semana Pasada
-													</a>
-												</li>
-												<li>
-													<a href="javascript:void(0);" class="dropdown-item rounded-1">
-														La Otra Semana
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-	
-								<div class="noti-content">
-									<div class="d-flex flex-column">
-										<div class="border-bottom mb-3 pb-3">
-											<a href="notification.html">
-												<div class="d-flex">
-													<span class="avatar avatar-lg me-2 flex-shrink-0">
-														<img src="assets/img/profiles/avatar-52.jpg" alt="Profile" class="rounded-circle">
-													</span>
-													<div class="flex-grow-1">
-														<div class="d-flex align-items-center">
-														<p class="mb-1 w-100"><span class="text-dark fw-semibold">Stephan Peralt</span> reprogramó el servicio para el 14/01/2024. </p>
-														<span class="d-flex justify-content-end "> <i class="ti ti-point-filled text-primary"></i></span>
-														</div> 
-														<span>Justo Ahora</span>
-													</div>
-												</div>
-											</a>
-										</div>
-										<div class="border-bottom mb-3 pb-3">
-											<a href="notification.html" class="pb-0">
-												<div class="d-flex">
-													<span class="avatar avatar-lg me-2 flex-shrink-0">
-														<img src="assets/img/profiles/avatar-36.jpg" alt="Profile" class="rounded-circle">
-													</span>
-													<div class="flex-grow-1">
-														<div class="d-flex align-items-center">
-															<p class="mb-1 w-100"><span class="text-dark fw-semibold">Harvey Smith</span> ha solicitado tu servicio.</p>
-															<span class="d-flex justify-content-end "> <i class="ti ti-point-filled text-primary"></i></span>
-														</div>
-														<span>Hace 5 minutos</span>
-														<div class="d-flex justify-content-start align-items-center mt-2">
-															<span class="btn btn-light btn-sm me-2">Rechazar</span>
-															<span class="btn btn-dark btn-sm">Aceptar</span>
-														</div>
-													</div>
-												</div>
-											</a>					
-										</div>
-										<div class="border-bottom mb-3 pb-3">
-											<a href="notification.html">
-												<div class="d-flex">
-													<span class="avatar avatar-lg me-2 flex-shrink-0">
-														<img src="assets/img/profiles/avatar-02.jpg" alt="Profile" class="rounded-circle">
-													</span>
-													<div class="flex-grow-1">
-														<p class="mb-1"><span class="text-dark fw-semibold"> Anthony Lewis</span> ha dejado comentarios para tu servicio reciente </p>
-														<span>Hace 10 minutos</span>
-													</div>
-												</div>
-											</a>
-										</div>
-										<div class="border-0 mb-3 pb-0">
-											<a href="notification.html">
-												<div class="d-flex">
-													<span class="avatar avatar-lg me-2 flex-shrink-0">
-														<img src="assets/img/profiles/avatar-22.jpg" alt="Profile" class="rounded-circle">
-													</span>
-													<div class="flex-grow-1">
-														<p class="mb-1"><span class="text-dark fw-semibold">Brian Villalobos</span> canceló el servicio programado para el 14/01/2024.
-														</p>
-														<span>Hace 15 minutos</span>
-													</div>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="d-flex p-0 notification-footer-btn">
-									<a href="#" class="btn btn-light rounded  me-2">Cancelar</a>
-									<a href="#" class="btn btn-dark rounded ">Ver Todos</a>
-								</div>
-							</div>
-						</div>
-						<div class="provider-head-links">
-							<a href="javascript:void(0);" class="d-flex align-items-center justify-content-center me-2"><i class="feather-maximize"></i></a>
-						</div>
-						<div class="dropdown">
-							<a href="javascript:void(0);" data-bs-toggle="dropdown">
-								<div class="booking-user d-flex align-items-center">
-									<span class="user-img">
-										<img src="assets/img/profiles/avatar-02.jpg" alt="user">
-									</span>
-								</div>
-							</a>
-							<ul class="dropdown-menu p-2">
-								<li><a class="dropdown-item d-flex align-items-center" href="login.html"><i class="ti ti-logout me-1"></i>Cerrar Sesión</a></li>
-							</ul>
-						</div>
-                   </div>
-
-                </div>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div class="dropdown mobile-user-menu">
-                <a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                <div class="dropdown-menu dropdown-menu-end">
-                    <a class="dropdown-item" href="profile.html">Mi Perfil</a>
-                    <a class="dropdown-item" href="profile-settings.html">Configuración</a>
-                    <a class="dropdown-item" href="login.html">Cerrar Sesión</a>
-                </div>
-            </div>
-            <!-- /Mobile Menu -->
-
-        </div>
+				</div>
+				<ul class="nav header-navbar-rht">
+					<li class="nav-item pe-1">
+						<a class="nav-link btn btn-light" href="login.html" ><i class="ti ti-lock me-2"></i> Iniciar sesión</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn btn-linear-primary" href="register.html" ><i class="ti ti-user-filled me-2"></i>Únete</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
         <!-- /Header -->
          <!-- formulario agregar networker-->
           	<div class="page-wrapper">
