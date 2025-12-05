@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace - Negocios en Red</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.svg" />
+
+    <!-- Themescript -->
+    <script src="assets/js/theme-script.js"></script>
+
+    <!-- Aos -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Tabler Icon CSS -->
+    <link rel="stylesheet" href="assets/plugins/tabler-icons/tabler-icons.css" />
+
+    <!-- select CSS -->
+    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css" />
+
+    <!-- Datatables CSS -->
+    <link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css" />
+    <link rel="stylesheet" href="assets/plugins/datatables/datatables.css" />
+
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" />
+
+    <!-- Fullcalendar CSS -->
+    <link rel="stylesheet" href="assets/plugins/fullcalendar/main.min.css" />
+    <link rel="stylesheet" href="assets/plugins/fullcalendar/bootstrap-icons.css" />
+
+    <!-- Fontawesome Icon CSS -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
+
+    <!-- Owlcarousel CSS -->
+    <link rel="stylesheet" href="assets/plugins/owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/feather.css" />
+
+    <!-- Mobile CSS-->
+    <link rel="stylesheet" href="assets/plugins/intltelinput/css/intlTelInput.css" />
+    <link rel="stylesheet" href="assets/plugins/intltelinput/css/demo.css" />
+
+    <!-- Tagsinput CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css" />
+
+    <!-- Calendar CSS -->
+    <link rel="stylesheet" href="assets/plugins/simple-calendar/simple-calendar.css" />
+
+    <!-- Mobile Input -->
+    <script src="assets/plugins/intltelinput/js/intlTelInput.js"></script>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="provider-page">
+    
+    <!-- Main Wrapper -->
+     <div class="main-wrapper">
+
+        <!-- Header -->
+        <div class="header provider-header">
+
+            <!-- Logo -->
+            <div class="header-left active">
+                <a href="index.html" class="logo logo-normal">
+                    <img src="assets/img/logo.svg" alt="Logo">
+                </a>
+                <a href="index.html" class="logo-small">
+                    <img src="assets/img/logo-small.svg" alt="Logo">
+                </a>
+                <a id="toggle_btn" href="javascript:void(0);">
+                    <i class="ti ti-menu-deep"></i>
+                </a>
+            </div>
+            <!-- /Logo -->
+
+            <a id="mobile_btn" class="mobile_btn" href="#sidebar">
+                <span class="bar-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+
+            <div class="header-user">
+                <div class="nav user-menu">
+
+                   <div class="d-flex align-items-center">
+						<div class="provider-head-links">
+							<div>
+								<a href="javascript:void(0);" id="dark-mode-toggle" class="dark-mode-toggle me-2">
+									<i class="fa-regular fa-moon"></i>
+								</a>
+								<a href="javascript:void(0);" id="light-mode-toggle" class="dark-mode-toggle me-2">
+									<i class="ti ti-sun-filled"></i>
+								</a>
+							</div>
+						</div>
+						<div class="dropdown">
+							<a href="javascript:void(0);" data-bs-toggle="dropdown">
+								<div class="booking-user d-flex align-items-center">
+									<span class="user-img">
+										<img src="assets/img/profiles/avatar-02.jpg" alt="user">
+									</span>
+								</div>
+							</a>
+							<ul class="dropdown-menu p-2">
+								<li><a class="dropdown-item d-flex align-items-center" href="login.html"><i class="ti ti-logout me-1"></i>Cerrar Sesión</a></li>
+							</ul>
+						</div>
+                   </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /Header -->
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="active">
+                            <a href="networker-business.html"><i class="ti ti-building-store"></i><span>Mi Negocio</span></a>
+                        </li>
+                        <li>
+                            <a href="networker-post.html"><i class="ti ti-briefcase"></i><span>Mis Publicaciones</span></a>
+                        </li>
+                        <li>
+                            <a href="networker-customers.html"><i class="ti ti-user"></i><span>Clientes</span></a>
+                        </li>
+                        <li>
+                            <a href="networker-orders.html"><i class="ti ti-calendar-month"></i><span>Pedidos</span></a>
+                        </li>
+                        <li>
+                            <a href="login.html"><i class="ti ti-logout-2"></i><span>Cerrar Sesión</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /Sidebar -->
+
+		<!-- Page Wrapper -->
+		<div class="page-wrapper">
+			<div class="content container-fluid">
+				<!-- Profile settings -->
+				<div class="row">
+					<div class="col-md-10 mx-auto">
+						<!-- Account Settings -->
+						<div class="card mb-0">
+							<div class="card-body">
+								<h6 class="user-title">Foto de Perfil</h6>
+								<div class="pro-picture">
+									<div class="pro-img avatar avatar-xl">
+										<img src="assets/img/user/user-02.jpg" alt="user"
+											class="img-fluid rounded-circle">
+									</div>
+									<div class="pro-info">
+										<div class="d-flex mb-2">
+											<a href="javascript:void(0);"
+												class="btn btn-dark btn-sm d-flex align-items-center me-3"><i
+													class="ti ti-cloud-upload me-1"></i>Subir</a>
+											<a href="javascript:void(0);"
+												class="btn btn-light btn-sm d-flex align-items-center">Eliminar</a>
+										</div>
+										<p class="fs-14">*el tamaño de la imagen debe ser de al menos 320px y menos de
+											500kb. Archivos permitidos .png y .jpg.</p>
+									</div>
+								</div>
+								<h6 class="user-title">Información General</h6>
+								<div class="general-info">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="mb-3">
+												<label class="form-label">Nombre</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="mb-3">
+												<label class="form-label">Nombre de Usuario</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="mb-3">
+												<label class="form-label">Correo Electrónico</label>
+												<input type="email" class="form-control">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="mb-3">
+												<label class="form-label">Número de Teléfono</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="mb-3">
+												<label class="form-label">Género</label>
+												<select class="select">
+													<option>Seleccionar</option>
+													<option>Masculino</option>
+													<option>Femenino</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="mb-3">
+												<label class="form-label">Fecha de Nacimiento</label>
+												<div class="input-icon position-relative">
+													<span class="input-icon-addon"><i class="ti ti-calendar"></i></span>
+													<input type="text" class="form-control datetimepicker"
+														placeholder="dd-mm-aaaa">
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div>
+												<label class="form-label">Tu Biografía</label>
+												<textarea class="form-control"></textarea>
+											</div>
+										</div>
+									</div>
+								</div>
+								<h6 class="user-title">Dirección</h6>
+								<div class="row address-info">
+									<div class="col-md-12">
+										<div class="mb-3">
+											<label class="form-label">Dirección</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="mb-3">
+											<label class="form-label">País</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="mb-3">
+											<label class="form-label">Estado</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="mb-3">
+											<label class="form-label">Ciudad</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="mb-3">
+											<label class="form-label">Código Postal</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+								</div>
+								<div class="acc-submit d-flex justify-content-end">
+									<a href="javascript:void(0);" class="btn btn-light me-3">Cancelar</a>
+									<a href="javascript:void(0);" class="btn btn-dark">Guardar Cambios</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- /Account Settings -->
+
+				</div>
+				<!-- /profile-settings -->
+
+			</div>
+		</div>
+		<!-- /Page Wrapper -->
+
+		<!-- Jquery JS -->
+		<script src="assets/js/jquery-3.7.1.min.js"></script>
+
+		<!-- Slimscroll JS -->
+		<script src="assets/js/jquery.slimscroll.min.js"></script>
+
+		<!-- Bootstrap JS -->
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Wow JS -->
+		<script src="assets/js/wow.min.js"></script>
+
+		<!-- select JS -->
+		<script src="assets/plugins/select2/js/select2.min.js"></script>
+
+		<!-- cursor JS -->
+		<script src="assets/js/cursor.js"></script>
+
+		<!-- Datepicker Core JS -->
+		<script src="assets/plugins/moment/moment.js"></script>
+		<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+
+		<!-- Tagsinput JS -->
+		<script src="assets/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.js"></script>
+
+		<!-- Calendar Js -->
+		<script src="assets/plugins/simple-calendar/jquery.simple-calendar.min.js"></script>
+		<script src="assets/js/calender.js"></script>
+
+		<!-- Script JS -->
+		<script src="assets/js/script.js"></script>
+</body>
+
+</html>

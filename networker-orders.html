@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace - Negocios en Red</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.svg" />
+
+    <!-- Themescript -->
+    <script src="assets/js/theme-script.js"></script>
+
+    <!-- Aos -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Tabler Icon CSS -->
+    <link rel="stylesheet" href="assets/plugins/tabler-icons/tabler-icons.css" />
+
+    <!-- select CSS -->
+    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css" />
+
+    <!-- Datatables CSS -->
+    <link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css" />
+    <link rel="stylesheet" href="assets/plugins/datatables/datatables.css" />
+
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" />
+
+    <!-- Fullcalendar CSS -->
+    <link rel="stylesheet" href="assets/plugins/fullcalendar/main.min.css" />
+    <link rel="stylesheet" href="assets/plugins/fullcalendar/bootstrap-icons.css" />
+
+    <!-- Fontawesome Icon CSS -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
+
+    <!-- Owlcarousel CSS -->
+    <link rel="stylesheet" href="assets/plugins/owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/feather.css" />
+
+    <!-- Mobile CSS-->
+    <link rel="stylesheet" href="assets/plugins/intltelinput/css/intlTelInput.css" />
+    <link rel="stylesheet" href="assets/plugins/intltelinput/css/demo.css" />
+
+    <!-- Tagsinput CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css" />
+
+    <!-- Calendar CSS -->
+    <link rel="stylesheet" href="assets/plugins/simple-calendar/simple-calendar.css" />
+
+    <!-- Mobile Input -->
+    <script src="assets/plugins/intltelinput/js/intlTelInput.js"></script>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="provider-page">
+    
+    <!-- Main Wrapper -->
+     <div class="main-wrapper">
+
+        <!-- Header -->
+        <div class="header provider-header">
+
+            <!-- Logo -->
+            <div class="header-left active">
+                <a href="index.html" class="logo logo-normal">
+                    <img src="assets/img/logo.svg" alt="Logo">
+                </a>
+                <a href="index.html" class="logo-small">
+                    <img src="assets/img/logo-small.svg" alt="Logo">
+                </a>
+                <a id="toggle_btn" href="javascript:void(0);">
+                    <i class="ti ti-menu-deep"></i>
+                </a>
+            </div>
+            <!-- /Logo -->
+
+            <a id="mobile_btn" class="mobile_btn" href="#sidebar">
+                <span class="bar-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+
+            <div class="header-user">
+                <div class="nav user-menu">
+
+                   <div class="d-flex align-items-center">
+						<div class="provider-head-links">
+							<div>
+								<a href="javascript:void(0);" id="dark-mode-toggle" class="dark-mode-toggle me-2">
+									<i class="fa-regular fa-moon"></i>
+								</a>
+								<a href="javascript:void(0);" id="light-mode-toggle" class="dark-mode-toggle me-2">
+									<i class="ti ti-sun-filled"></i>
+								</a>
+							</div>
+						</div>
+						<div class="dropdown">
+							<a href="javascript:void(0);" data-bs-toggle="dropdown">
+								<div class="booking-user d-flex align-items-center">
+									<span class="user-img">
+										<img src="assets/img/profiles/avatar-02.jpg" alt="user">
+									</span>
+								</div>
+							</a>
+							<ul class="dropdown-menu p-2">
+								<li><a class="dropdown-item d-flex align-items-center" href="login.html"><i class="ti ti-logout me-1"></i>Cerrar Sesión</a></li>
+							</ul>
+						</div>
+                   </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /Header -->
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a href="networker-business.html"><i class="ti ti-building-store"></i><span>Mi Negocio</span></a>
+                        </li>
+                        <li>
+                            <a href="networker-post.html"><i class="ti ti-briefcase"></i><span>Mis Publicaciones</span></a>
+                        </li>
+                        <li>
+                            <a href="networker-customers.html"><i class="ti ti-user"></i><span>Clientes</span></a>
+                        </li>
+                        <li class="active">
+                            <a href="networker-orders.html"><i class="ti ti-calendar-month"></i><span>Pedidos</span></a>
+                        </li>
+                        <li>
+                            <a href="login.html"><i class="ti ti-logout-2"></i><span>Cerrar Sesión</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /Sidebar -->
+
+    <!-- Page Wrapper -->
+    <div class="page-wrapper">
+        <div class="content container-fluid">
+            <div class="row">
+                <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3 mb-4">
+                    <h4>Lista de Pedidos</h4>
+                    <div class="d-flex align-items-center flex-wrap row-gap-3">
+                        <span class="fs-14 me-2">Ordenar</span>
+                        <div class="dropdown me-2">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-bs-toggle="dropdown">
+                                Recién Agregados
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="javascript:void(0);" class="dropdown-item active">Recién Agregados</a>
+                                <a href="javascript:void(0);" class="dropdown-item">Más Antiguos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xxl-12 col-lg-12">
+                    <div class="card shadow-none booking-list">
+                        <div class="card-body d-md-flex align-items-center">
+                            <div class="booking-widget d-sm-flex align-items-center row-gap-3 flex-fill mb-3 mb-md-0">
+                                <div class="booking-img me-sm-3 mb-3 mb-sm-0">
+                                    <a href="networker-order-details.html" class="avatar">
+                                        <img src="assets/img/providers/provider-15.jpg" alt="User Image" />
+                                    </a>
+                                    <div class="fav-item">
+                                        <a href="javascript:void(0)" class="fav-icon">
+                                            <i class="ti ti-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="booking-det-info">
+                                    <h6 class="mb-3">
+                                        <a href="networker-order-details.html">Servicios de Computadora</a><span
+                                            class="badge badge-soft-danger ms-2">Cancelado</span>
+                                    </h6>
+                                    <ul class="booking-details">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="book-item">Fecha de Pedido</span>
+                                            <small class="me-2">: </small>27 Sep, 17:00-18:00
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="book-item">Monto</span>
+                                            <small class="me-2">: </small> $100.00<span
+                                                class="badge badge-soft-primary ms-2">Paypal</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="book-item">Ubicación</span>
+                                            <small class="me-2">: </small>Newyork, USA
+                                        </li>
+                                        <li class="d-flex align-items-center flex-wrap">
+                                            <span class="book-item">Proveedor</span>
+                                            <small class="me-2">: </small>
+                                            <div class="user-book d-flex align-items-center flex-wrap me-2">
+                                                <div class="avatar avatar-xs me-2">
+                                                    <img class="avatar-img rounded-circle" alt="User Image"
+                                                        src="assets/img/profiles/avatar-02.jpg" />
+                                                </div>
+                                                John Doe
+                                            </div>
+                                            <p class="mb-0 me-2">
+                                                <i class="ti ti-point-filled fs-10 text-muted me-2"></i>info@johndoe.com
+                                            </p>
+                                            <p>
+                                                <i class="ti ti-point-filled fs-10 text-muted me-2"></i>+1 888 888 8888
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="booking.html" class="btn btn-light" data-bs-toggle="modal"
+                                    data-bs-target="#reschedule">Reprogramar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-none booking-list">
+                        <div class="card-body d-md-flex align-items-center">
+                            <div class="booking-widget d-sm-flex align-items-center row-gap-3 flex-fill mb-3 mb-md-0">
+                                <div class="booking-img me-sm-3 mb-3 mb-sm-0">
+                                    <a href="networker-order-details.html" class="avatar">
+                                        <img src="assets/img/providers/provider-13.jpg" alt="User Image" />
+                                    </a>
+                                    <div class="fav-item">
+                                        <a href="javascript:void(0)" class="fav-icon">
+                                            <i class="ti ti-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="booking-det-info">
+                                    <h6 class="mb-3">
+                                        <a href="networker-order-details.html">Servicios de Reparación de Autos</a><span
+                                            class="badge badge-soft-success ms-2">Completado</span>
+                                    </h6>
+                                    <ul class="booking-details">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="book-item">Fecha de Pedido</span>
+                                            <small class="me-2">: </small>23 Sep 2022, 10:00-11:00
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="book-item">Monto</span>
+                                            <small class="me-2">: </small> $50.00<span
+                                                class="badge badge-soft-primary ms-2">Contra Entrega</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="book-item">Ubicación</span>
+                                            <small class="me-2">: </small>Alabama, USA
+                                        </li>
+                                        <li class="d-flex align-items-center flex-wrap">
+                                            <span class="book-item">Proveedor</span>
+                                            <small class="me-2">: </small>
+                                            <div class="user-book d-flex align-items-center flex-wrap me-2">
+                                                <div class="avatar avatar-xs me-2">
+                                                    <img class="avatar-img rounded-circle" alt="User Image"
+                                                        src="assets/img/profiles/avatar-02.jpg" />
+                                                </div>
+                                                John Smith
+                                            </div>
+                                            <p class="mb-0 me-2">
+                                                <i
+                                                    class="ti ti-point-filled fs-10 text-muted me-2"></i>info@johnsmith.com
+                                            </p>
+                                            <p>
+                                                <i class="ti ti-point-filled fs-10 text-muted me-2"></i>+1 607-276-5393
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <div class="d-flex align-items-center flex-wrap row-gap-2">
+                                    <a href="booking.html" class="btn btn-light" data-bs-toggle="modal"
+                                        data-bs-target="#cancel_appointment">Cancelar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-none booking-list">
+                        <div class="card-body d-md-flex align-items-center">
+                            <div class="booking-widget d-sm-flex align-items-center row-gap-3 flex-fill mb-3 mb-md-0">
+                                <div class="booking-img me-sm-3 mb-3 mb-sm-0">
+                                    <a href="networker-order-details.html" class="avatar">
+                                        <img src="assets/img/providers/provider-16.jpg" alt="User Image" />
+                                    </a>
+                                    <div class="fav-item">
+                                        <a href="javascript:void(0)" class="fav-icon">
+                                            <i class="ti ti-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="booking-det-info">
+                                    <h6 class="mb-3">
+                                        <a href="networker-order-details.html">Diseño de Interiores</a><span
+                                            class="badge badge-soft-info ms-2">En Progreso</span>
+                                    </h6>
+                                    <ul class="booking-details">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="book-item">Fecha de Pedido</span>
+                                            <small class="me-2">: </small>22 Sep 2022, 11:00-12:00
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="book-item">Monto</span>
+                                            <small class="me-2">: </small> $50.00<span
+                                                class="badge badge-soft-primary ms-2">Paypal</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="book-item">Ubicación</span>
+                                            <small class="me-2">: </small>Washington, DC, USA
+                                        </li>
+                                        <li class="d-flex align-items-center flex-wrap">
+                                            <span class="book-item">Proveedor</span>
+                                            <small class="me-2">: </small>
+                                            <div class="user-book d-flex align-items-center flex-wrap me-2">
+                                                <div class="avatar avatar-xs me-2">
+                                                    <img class="avatar-img rounded-circle" alt="User Image"
+                                                        src="assets/img/profiles/avatar-02.jpg" />
+                                                </div>
+                                                Quentin
+                                            </div>
+                                            <p class="mb-0 me-2">
+                                                <i class="ti ti-point-filled fs-10 text-muted me-2"></i>info@quentin.com
+                                            </p>
+                                            <p>
+                                                <i class="ti ti-point-filled fs-10 text-muted me-2"></i>+1 601-810-9218
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <div class="d-flex align-items-center flex-wrap row-gap-2">
+                                    <a href="booking.html" class="btn btn-light" data-bs-toggle="modal"
+                                        data-bs-target="#cancel_appointment">Cancelar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-none booking-list">
+                        <div class="card-body d-md-flex align-items-center">
+                            <div class="booking-widget d-sm-flex align-items-center row-gap-3 flex-fill mb-3 mb-md-0">
+                                <div class="booking-img me-sm-3 mb-3 mb-sm-0">
+                                    <a href="networker-order-details.html" class="avatar">
+                                        <img src="assets/img/providers/provider-19.jpg" alt="User Image" />
+                                    </a>
+                                    <div class="fav-item">
+                                        <a href="javascript:void(0)" class="fav-icon">
+                                            <i class="ti ti-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="booking-det-info">
+                                    <h6 class="mb-3">
+                                        <a href="networker-order-details.html">Diseño de Interiores</a><span
+                                            class="badge badge-soft-info ms-2">En Progreso</span>
+                                    </h6>
+                                    <ul class="booking-details">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="book-item">Fecha de Pedido</span>
+                                            <small class="me-2">: </small>22 Sep 2022, 11:00-12:00
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="book-item">Monto</span>
+                                            <small class="me-2">: </small> $50.00<span
+                                                class="badge badge-soft-primary ms-2">Paypal</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="book-item">Ubicación</span>
+                                            <small class="me-2">: </small>Washington, DC, USA
+                                        </li>
+                                        <li class="d-flex align-items-center flex-wrap">
+                                            <span class="book-item">Proveedor</span>
+                                            <small class="me-2">: </small>
+                                            <div class="user-book d-flex align-items-center flex-wrap me-2">
+                                                <div class="avatar avatar-xs me-2">
+                                                    <img class="avatar-img rounded-circle" alt="User Image"
+                                                        src="assets/img/profiles/avatar-02.jpg" />
+                                                </div>
+                                                Quentin
+                                            </div>
+                                            <p class="mb-0 me-2">
+                                                <i class="ti ti-point-filled fs-10 text-muted me-2"></i>info@quentin.com
+                                            </p>
+                                            <p>
+                                                <i class="ti ti-point-filled fs-10 text-muted me-2"></i>+1 601-810-9218
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <div class="d-flex align-items-center flex-wrap row-gap-2">
+                                    <a href="booking.html" class="btn btn-light" data-bs-toggle="modal"
+                                        data-bs-target="#cancel_appointment">Cancelar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-none booking-list">
+                        <div class="card-body d-md-flex align-items-center">
+                            <div class="booking-widget d-sm-flex align-items-center row-gap-3 flex-fill mb-3 mb-md-0">
+                                <div class="booking-img me-sm-3 mb-3 mb-sm-0">
+                                    <a href="networker-order-details.html" class="avatar">
+                                        <img src="assets/img/providers/provider-18.jpg" alt="User Image" />
+                                    </a>
+                                    <div class="fav-item">
+                                        <a href="javascript:void(0)" class="fav-icon">
+                                            <i class="ti ti-heart"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="booking-det-info">
+                                    <h6 class="mb-3">
+                                        <a href="networker-order-details.html">Servicios de Reparación de Autos</a><span
+                                            class="badge badge-soft-success ms-2">Completado</span>
+                                    </h6>
+                                    <ul class="booking-details">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="book-item">Fecha de Pedido</span>
+                                            <small class="me-2">: </small>23 Sep 2022, 10:00-11:00
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="book-item">Monto</span>
+                                            <small class="me-2">: </small> $50.00<span
+                                                class="badge badge-soft-primary ms-2">Contra Entrega</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="book-item">Ubicación</span>
+                                            <small class="me-2">: </small>Alabama, USA
+                                        </li>
+                                        <li class="d-flex align-items-center flex-wrap">
+                                            <span class="book-item">Proveedor</span>
+                                            <small class="me-2">: </small>
+                                            <div class="user-book d-flex align-items-center flex-wrap me-2">
+                                                <div class="avatar avatar-xs me-2">
+                                                    <img class="avatar-img rounded-circle" alt="User Image"
+                                                        src="assets/img/profiles/avatar-02.jpg" />
+                                                </div>
+                                                John Smith
+                                            </div>
+                                            <p class="mb-0 me-2">
+                                                <i
+                                                    class="ti ti-point-filled fs-10 text-muted me-2"></i>info@johnsmith.com
+                                            </p>
+                                            <p>
+                                                <i class="ti ti-point-filled fs-10 text-muted me-2"></i>+1 607-276-5393
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <div class="d-flex align-items-center flex-wrap row-gap-2">
+                                    <a href="booking.html" class="btn btn-light" data-bs-toggle="modal"
+                                        data-bs-target="#cancel_appointment">Cancelar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center flex-wrap row-gap-3">
+                <div class="value d-flex align-items-center">
+                    <span>Mostrar</span>
+                    <select>
+                        <option>7</option>
+                    </select>
+                    <span>entradas</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <span class="me-2 text-gray-9">1 - 07 de 10</span>
+                    <nav aria-label="Page navigation">
+                        <ul class="paginations d-flex justify-content-center align-items-center">
+                            <li class="page-item me-2">
+                                <a class="page-link-1 active d-flex justify-content-center align-items-center"
+                                    href="javascript:void(0);">1</a>
+                            </li>
+                            <li class="page-item me-2">
+                                <a class="page-link-1 d-flex justify-content-center align-items-center"
+                                    href="javascript:void(0);">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link-1 d-flex justify-content-center align-items-center"
+                                    href="javascript:void(0);">3</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Page Wrapper -->
+
+    <!-- Delete Account -->
+    <div class="modal fade custom-modal" id="del-account">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header d-flex align-items-center justify-content-between border-bottom">
+                    <h5 class="modal-title">Eliminar Cuenta</h5>
+                    <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="ti ti-circle-x-filled fs-20"></i></a>
+                </div>
+                <form action="#">
+                    <div class="modal-body">
+                        <p class="mb-3">
+                            ¿Estás seguro de que quieres eliminar esta cuenta? Para eliminar
+                            tu cuenta, escribe tu contraseña.
+                        </p>
+                        <div class="mb-0">
+                            <label class="form-label">Contraseña</label>
+                            <div class="pass-group">
+                                <input type="password" class="form-control pass-input" placeholder="*************" />
+                                <span class="toggle-password feather-eye-off"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancelar</a>
+                        <button type="submit" class="btn btn-dark">
+                            Eliminar Cuenta
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /Delete Account -->
+
+    <!-- Reschedule Appointment -->
+    <div class="modal fade custom-modal" id="reschedule">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header d-flex align-items-center justify-content-between border-bottom">
+                    <h5 class="modal-title">Reprogramar Cita</h5>
+                    <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="ti ti-circle-x-filled fs-20"></i></a>
+                </div>
+                <div class="modal-body">
+                    <form action="user-bookings.html">
+                        <div class="mb-3">
+                            <label class="form-label">Fecha de Cita</label>
+                            <div class="form-icon">
+                                <input type="text" class="form-control datetimepicker" placeholder="DD/MM/YYYY" />
+                                <span class="cus-icon"><i class="feather-calendar"></i></span>
+                            </div>
+                        </div>
+                        <div class="mb-0">
+                            <label class="form-label">Hora de Cita</label>
+                            <div class="form-icon">
+                                <input type="text" class="form-control timepicker" placeholder="DD/MM/YYYY" />
+                                <span class="cus-icon"><i class="feather-clock"></i></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="acc-submit">
+                        <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancelar</a>
+                        <button class="btn btn-dark" type="submit">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Reschedule Appointment -->
+
+    <!-- Cancel Appointment -->
+    <div class="modal fade custom-modal" id="cancel_appointment">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header d-flex align-items-center justify-content-between border-bottom">
+                    <h5 class="modal-title">Cancelar Cita</h5>
+                    <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="ti ti-circle-x-filled fs-20"></i></a>
+                </div>
+                <form action="user-bookings.html">
+                    <div class="modal-body">
+                        <p>
+                            ¿Estás seguro de que quieres cancelar la cita de
+                            <span class="text-dark"> John Doe</span> el
+                            <span class="text-dark"> 28 de Oct, 2022</span> a la hora
+                            <span class="text-dark"> 10AM - 12PM</span>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="acc-submit">
+                            <a href="javascript:void(0);" class="btn btn-light me-2"
+                                data-bs-dismiss="modal">Descartar</a>
+                            <button class="btn btn-dark" type="submit">Sí, Cancelar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /Cancel Appointment -->
+
+    <!-- Add Review -->
+    <div class="modal fade custom-modal" id="add-review">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header d-flex align-items-center justify-content-between border-bottom">
+                    <h5 class="modal-title">Escribir una Reseña</h5>
+                    <a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="ti ti-circle-x-filled fs-20"></i></a>
+                </div>
+                <form action="user-bookings.html">
+                    <div class="modal-body">
+                        <div class="write-review">
+                            <div class="review-add d-flex align-items-center mb-3">
+                                <div class="rev-img me-2">
+                                    <img src="assets/img/services/service-19.jpg" alt="image" />
+                                </div>
+                                <div>
+                                    <h6 class="fs-16 fw-medium mb-1">
+                                        Servicios de Computadora
+                                    </h6>
+                                    <p class="fs-12">Newyork, USA</p>
+                                </div>
+                            </div>
+                            <div class="mb-0">
+                                <label class="col-form-label">Escribe tu Reseña</label>
+                                <textarea class="form-control" rows="4"
+                                    placeholder="Por favor escribe tu reseña"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancelar</a>
+                        <button type="submit" class="btn btn-dark">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /Add Review -->
+    <!-- /Main Wrapper -->
+
+    <!-- Jquery JS -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- Slimscroll JS -->
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Wow JS -->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!-- select JS -->
+    <script src="assets/plugins/select2/js/select2.min.js"></script>
+
+    <!-- Datetimepicker JS -->
+    <script src="assets/js/moment.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- Script JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace - Negocios en Red</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.svg" />
+
+    <!-- Themescript -->
+    <script src="assets/js/theme-script.js"></script>
+
+    <!-- Aos -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Tabler Icon CSS -->
+    <link rel="stylesheet" href="assets/plugins/tabler-icons/tabler-icons.css" />
+
+    <!-- select CSS -->
+    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css" />
+
+    <!-- Datatables CSS -->
+    <link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css" />
+    <link rel="stylesheet" href="assets/plugins/datatables/datatables.css" />
+
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" />
+
+    <!-- Fullcalendar CSS -->
+    <link rel="stylesheet" href="assets/plugins/fullcalendar/main.min.css" />
+    <link rel="stylesheet" href="assets/plugins/fullcalendar/bootstrap-icons.css" />
+
+    <!-- Fontawesome Icon CSS -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
+
+    <!-- Owlcarousel CSS -->
+    <link rel="stylesheet" href="assets/plugins/owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/feather.css" />
+
+    <!-- Mobile CSS-->
+    <link rel="stylesheet" href="assets/plugins/intltelinput/css/intlTelInput.css" />
+    <link rel="stylesheet" href="assets/plugins/intltelinput/css/demo.css" />
+
+    <!-- Tagsinput CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css" />
+
+    <!-- Calendar CSS -->
+    <link rel="stylesheet" href="assets/plugins/simple-calendar/simple-calendar.css" />
+
+    <!-- Mobile Input -->
+    <script src="assets/plugins/intltelinput/js/intlTelInput.js"></script>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="provider-page">
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header -->
+        <div class="header provider-header">
+
+            <!-- Logo -->
+            <div class="header-left active">
+                <a href="index.html" class="logo logo-normal">
+                    <img src="assets/img/logo.svg" alt="Logo">
+                </a>
+                <a href="index.html" class="logo-small">
+                    <img src="assets/img/logo-small.svg" alt="Logo">
+                </a>
+                <a id="toggle_btn" href="javascript:void(0);">
+                    <i class="ti ti-menu-deep"></i>
+                </a>
+            </div>
+            <!-- /Logo -->
+
+            <a id="mobile_btn" class="mobile_btn" href="#sidebar">
+                <span class="bar-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+
+            <div class="header-user">
+                <div class="nav user-menu">
+
+                    <div class="d-flex align-items-center">
+                        <div class="provider-head-links">
+                            <div>
+                                <a href="javascript:void(0);" id="dark-mode-toggle" class="dark-mode-toggle me-2">
+                                    <i class="fa-regular fa-moon"></i>
+                                </a>
+                                <a href="javascript:void(0);" id="light-mode-toggle" class="dark-mode-toggle me-2">
+                                    <i class="ti ti-sun-filled"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a href="javascript:void(0);" data-bs-toggle="dropdown">
+                                <div class="booking-user d-flex align-items-center">
+                                    <span class="user-img">
+                                        <img src="assets/img/profiles/avatar-02.jpg" alt="user">
+                                    </span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu p-2">
+                                <li><a class="dropdown-item d-flex align-items-center" href="login.html"><i
+                                            class="ti ti-logout me-1"></i>Cerrar Sesión</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /Header -->
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a href="networker-business.html"><i class="ti ti-building-store"></i><span>Mi
+                                    Negocio</span></a>
+                        </li>
+                        <li class="active">
+                            <a href="networker-post.html"><i class="ti ti-briefcase"></i><span>Mis
+                                    Publicaciones</span></a>
+                        </li>
+                        <li>
+                            <a href="networker-customers.html"><i class="ti ti-user"></i><span>Clientes</span></a>
+                        </li>
+                        <li>
+                            <a href="networker-orders.html"><i class="ti ti-calendar-month"></i><span>Pedidos</span></a>
+                        </li>
+                        <li>
+                            <a href="login.html"><i class="ti ti-logout-2"></i><span>Cerrar Sesión</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /Sidebar -->
+
+        <div class="page-wrapper">
+            <div class="content content-two">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="service-inform-fieldset">
+                                <fieldset id="first-field">
+                                    <h4 class="mb-3">Información del Publicacion</h4>
+                                    <form action="create-service.html">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                                    <div class="accordion-item mb-3">
+                                                        <div class="accordion-header" id="accordion-headingOne">
+                                                            <div class="accordion-button p-0" data-bs-toggle="collapse"
+                                                                data-bs-target="#accordion-collapseOne"
+                                                                aria-expanded="true"
+                                                                aria-controls="accordion-collapseOne" role="button">
+                                                                Información Básica
+                                                            </div>
+                                                        </div>
+                                                        <div id="accordion-collapseOne"
+                                                            class="accordion-collapse collapse show"
+                                                            aria-labelledby="accordion-headingOne">
+                                                            <div class="accordion-body p-0 mt-3 pb-1">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Título del
+                                                                                Servicio <span
+                                                                                    class="text-danger">*</span></label>
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Slug <span
+                                                                                    class="text-danger">*</span></label>
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Categoría <span
+                                                                                    class="text-danger">*</span></label>
+                                                                            <select class="select">
+                                                                                <option>Seleccionar</option>
+                                                                                <option>Lavado de Auto</option>
+                                                                                <option>Limpieza del Hogar</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Subcategoría <span
+                                                                                    class="text-danger">*</span></label>
+                                                                            <select class="select">
+                                                                                <option>Seleccionar</option>
+                                                                                <option>Lavado de Auto</option>
+                                                                                <option>Limpieza del Hogar</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3">
+                                                        <div class="accordion-header" id="accordion-headingTwo">
+                                                            <div class="accordion-button p-0" data-bs-toggle="collapse"
+                                                                data-bs-target="#accordion-collapseTwo"
+                                                                aria-expanded="true"
+                                                                aria-controls="accordion-collapseTwo">
+                                                                Precios
+                                                                <div class="form-check form-switch ms-3">
+                                                                    <input class="form-check-input" type="checkbox">
+                                                                    <label class="form-check-label">Gratis</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="accordion-collapseTwo"
+                                                            class="accordion-collapse collapse show"
+                                                            aria-labelledby="accordion-headingTwo">
+                                                            <div class="accordion-body p-0 mt-3 pb-1">
+                                                                <div class="row">
+                                                                    <div class="col-xl-3 col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Ingresar Monto
+                                                                                <span
+                                                                                    class="text-danger">*</span></label>
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xl-3 col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Precio de Oferta
+                                                                                <span
+                                                                                    class="text-danger">*</span></label>
+                                                                            <select class="select">
+                                                                                <option>Seleccionar</option>
+                                                                                <option>Porcentaje</option>
+                                                                                <option>Precio</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xl-3 col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Precio después de
+                                                                                descuento
+                                                                                <span
+                                                                                    class="text-danger">*</span></label>
+                                                                            <input type="text" class="form-control"
+                                                                                disabled>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xl-3 col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Impuesto <span
+                                                                                    class="text-danger">*</span></label>
+                                                                            <select class="select">
+                                                                                <option>Seleccionar</option>
+                                                                                <option>Porcentaje</option>
+                                                                                <option>Precio</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xl-3 col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Duración <span
+                                                                                    class="text-danger">*</span></label>
+                                                                            <select class="select">
+                                                                                <option>Seleccionar</option>
+                                                                                <option>Minutos</option>
+                                                                                <option>Minutos</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-check mb-3">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="flexRadioDefault" id="zoom_meet"
+                                                                                checked>
+                                                                            <label class="form-check-label"
+                                                                                for="zoom_meet">
+                                                                                Permitir Reunión de Zoom
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="mb-3 zoom-meet-link">
+                                                                            <label class="form-label">Enlace de
+                                                                                Invitación de Zoom</label>
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-check mb-3">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="flexRadioDefault"
+                                                                                id="google_meet">
+                                                                            <label class="form-check-label"
+                                                                                for="google_meet">
+                                                                                Permitir Google Meet
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="mb-3 google-meet-link">
+                                                                            <label class="form-label">Enlace de
+                                                                                Invitación de Google</label>
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3">
+                                                        <div class="accordion-header" id="accordion-headingThree">
+                                                            <div class="accordion-button p-0" data-bs-toggle="collapse"
+                                                                data-bs-target="#accordion-collapseThree"
+                                                                aria-expanded="true"
+                                                                aria-controls="accordion-collapseThree" role="button">
+                                                                Ubicación y Personal <span
+                                                                    class="fs-14 ms-1 text-default">(
+                                                                    Puede agregar múltiples ubicaciones )</span>
+                                                            </div>
+                                                        </div>
+                                                        <div id="accordion-collapseThree"
+                                                            class="accordion-collapse collapse show"
+                                                            aria-labelledby="accordion-headingThree">
+                                                            <div class="accordion-body p-0 mt-3 pb-1">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Personal <span
+                                                                                    class="text-danger">
+                                                                                    *</span></label>
+                                                                            <select class="multiple-img"
+                                                                                multiple="multiple">
+                                                                                <option
+                                                                                    data-image="assets/img/profiles/avatar-01.jpg">
+                                                                                    Darlee Robertson</option>
+                                                                                <option
+                                                                                    data-image="assets/img/profiles/avatar-02.jpg"
+                                                                                    selected>Sharon Roy</option>
+                                                                                <option
+                                                                                    data-image="assets/img/profiles/avatar-03.jpg">
+                                                                                    Vaughan</option>
+                                                                                <option
+                                                                                    data-image="assets/img/profiles/avatar-04.jpg">
+                                                                                    Jessica</option>
+                                                                                <option
+                                                                                    data-image="assets/img/profiles/avatar-05.jpg">
+                                                                                    Carol Thomas</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3">
+                                                        <div class="accordion-header" id="accordion-headingFour">
+                                                            <div class="accordion-button p-0" data-bs-toggle="collapse"
+                                                                data-bs-target="#accordion-collapseFour"
+                                                                aria-expanded="true"
+                                                                aria-controls="accordion-collapseFour" role="button">
+                                                                Incluye
+                                                            </div>
+                                                        </div>
+                                                        <div id="accordion-collapseFour"
+                                                            class="accordion-collapse collapse show"
+                                                            aria-labelledby="accordion-headingFour">
+                                                            <div class="accordion-body p-0 mt-3 pb-1">
+                                                                <div class="addtitle-info">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="mb-3">
+                                                                                <label class="form-label">Título <span
+                                                                                        class="text-danger">
+                                                                                        *</span></label>
+                                                                                <div class="d-flex align-items-center">
+                                                                                    <input type="text"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <a href="javascript:void(0);"
+                                                                    class="text-primary d-inline-flex align-items-center add-extra fs-14 mb-3"><i
+                                                                        class="ti ti-circle-plus me-2"></i>Agregar
+                                                                    Nuevo</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3">
+                                                        <div class="accordion-header" id="accordion-headingFive">
+                                                            <div class="accordion-button p-0" data-bs-toggle="collapse"
+                                                                data-bs-target="#accordion-collapseFive"
+                                                                aria-expanded="true"
+                                                                aria-controls="accordion-collapseFive" role="button">
+                                                                Agregar Servicios Adicionales
+                                                            </div>
+                                                        </div>
+                                                        <div id="accordion-collapseFive"
+                                                            class="accordion-collapse collapse show"
+                                                            aria-labelledby="accordion-headingFive">
+                                                            <div class="accordion-body p-0 mt-3 pb-1">
+                                                                <div class="addservice-info">
+                                                                    <div class="row">
+                                                                        <div class="col-xl-5">
+                                                                            <div class="d-flex align-items-center mb-3">
+                                                                                <div
+                                                                                    class="file-upload service-file-upload d-flex align-items-center justify-content-center flex-column me-4">
+                                                                                    <i class="ti ti-photo"></i>
+                                                                                    <input type="file"
+                                                                                        accept="video/image">
+                                                                                </div>
+                                                                                <div class="mb-3 flex-fill">
+                                                                                    <label class="form-label">Nombre
+                                                                                        <span class="text-danger">
+                                                                                            *</span></label>
+                                                                                    <input type="text"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xl-3">
+                                                                            <div class="mb-3">
+                                                                                <label class="form-label">Precio <span
+                                                                                        class="text-danger">
+                                                                                        *</span></label>
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xl-4">
+                                                                            <div class="mb-3">
+                                                                                <label class="form-label">Duración <span
+                                                                                        class="text-danger">
+                                                                                        *</span></label>
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <a href="javascript:void(0);"
+                                                                    class="text-primary d-inline-flex align-items-center fs-14 add-extra2 mb-3"><i
+                                                                        class="ti ti-circle-plus me-2"></i>Agregar
+                                                                    Nuevo</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item mb-3">
+                                                        <div class="accordion-header" id="accordion-headingSix">
+                                                            <div class="accordion-button p-0" data-bs-toggle="collapse"
+                                                                data-bs-target="#accordion-collapseSix"
+                                                                aria-expanded="true"
+                                                                aria-controls="accordion-collapseSix" role="button">
+                                                                Descripción General del Servicio
+                                                            </div>
+                                                        </div>
+                                                        <div id="accordion-collapseSix"
+                                                            class="accordion-collapse collapse show"
+                                                            aria-labelledby="accordion-headingSix">
+                                                            <div class="accordion-body p-0 mt-3 pb-1">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Descripción
+                                                                                General</label>
+                                                                            <textarea
+                                                                                class="form-control ck-editor"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Estado del
+                                                                                Servicio <span class="text-danger">
+                                                                                    *</span></label>
+                                                                            <div class="d-flex align-items-center mb-3">
+                                                                                <div class="form-check me-3">
+                                                                                    <input class="form-check-input"
+                                                                                        type="radio" name="status"
+                                                                                        id="status_active" checked="">
+                                                                                    <label class="form-check-label"
+                                                                                        for="status_active">
+                                                                                        Activo
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input"
+                                                                                        type="radio" name="status"
+                                                                                        id="status_inactive">
+                                                                                    <label class="form-check-label"
+                                                                                        for="status_inactive">
+                                                                                        Inactivo
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-end">
+                                                    <button class="btn btn-dark next_btn"
+                                                        type="button">Continuar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </fieldset>
+                                <fieldset>
+                                    <h4 class="mb-3">Ubicación</h4>
+                                    <form action="create-service.html">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="border-bottom mb-3 pb-3">
+                                                    <h4 class="fs-20">Agregar Ubicación</h4>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Dirección <span> *</span></label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">País <span
+                                                                    class="text-danger">*</span></label>
+                                                            <select class="select">
+                                                                <option>Seleccionar</option>
+                                                                <option>Brasil</option>
+                                                                <option>Canadá</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Ciudad <span
+                                                                    class="text-danger">*</span></label>
+                                                            <select class="select">
+                                                                <option>Seleccionar</option>
+                                                                <option>Londres</option>
+                                                                <option>París</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Estado <span
+                                                                    class="text-danger">*</span></label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Código Postal <span
+                                                                    class="text-danger">*</span></label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="border-bottom mb-3 pb-3">
+                                                            <div class="map-grid mb-0">
+                                                                <iframe
+                                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6509170.989457427!2d-123.80081967108484!3d37.192957227641294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C%20USA!5e0!3m2!1sen!2sin!4v1669181581381!5m2!1sen!2sin"
+                                                                    allowfullscreen="" aria-hidden="false" tabindex="0"
+                                                                    class="contact-map w-100"></iframe>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-end">
+                                                    <button type="button"
+                                                        class="btn btn-light prev_btn me-3">Atrás</button>
+                                                    <button type="button" class="btn btn-dark next_btn">Guardar y
+                                                        Continuar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </fieldset>
+                                <fieldset>
+                                    <h4 class="mb-3">Galería</h4>
+                                    <form action="create-service.html">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="border-bottom mb-3 pb-3">
+                                                    <h4 class="fs-20">Agregar Medios y Archivos</h4>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Agregar Imágenes del Servicio
+                                                                <span class="text-danger"> *</span></label>
+                                                            <div class="d-flex align-items-center flex-wrap row-gap-3">
+                                                                <div class="avatar avatar-gallery me-3">
+                                                                    <img src="assets/img/gallery/gallery-01.jpg"
+                                                                        alt="Img">
+                                                                    <a href="javascript:void(0);"
+                                                                        class="trash-top d-flex align-items-center justify-content-center">
+                                                                        <i class="ti ti-trash"></i>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="avatar avatar-gallery me-3">
+                                                                    <img src="assets/img/gallery/gallery-02.jpg"
+                                                                        alt="Img">
+                                                                    <a href="javascript:void(0);"
+                                                                        class="trash-top d-flex align-items-center justify-content-center">
+                                                                        <i class="ti ti-trash"></i>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="avatar avatar-gallery me-3">
+                                                                    <img src="assets/img/gallery/gallery-03.jpg"
+                                                                        alt="Img">
+                                                                    <a href="javascript:void(0);"
+                                                                        class="trash-top d-flex align-items-center justify-content-center">
+                                                                        <i class="ti ti-trash"></i>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="avatar avatar-gallery me-3">
+                                                                    <img src="assets/img/gallery/gallery-04.jpg"
+                                                                        alt="Img">
+                                                                    <a href="javascript:void(0);"
+                                                                        class="trash-top d-flex align-items-center justify-content-center">
+                                                                        <i class="ti ti-trash"></i>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="avatar avatar-gallery me-3">
+                                                                    <img src="assets/img/gallery/gallery-05.jpg"
+                                                                        alt="Img">
+                                                                    <a href="javascript:void(0);"
+                                                                        class="trash-top d-flex align-items-center justify-content-center">
+                                                                        <i class="ti ti-trash"></i>
+                                                                    </a>
+                                                                </div>
+                                                                <div
+                                                                    class="file-upload d-flex align-items-center justify-content-center flex-column">
+                                                                    <i class="ti ti-photo mb-2"></i>
+                                                                    <p class="mb-0">Agregar Imágenes</p>
+                                                                    <input type="file" accept="video/image">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Video del Servicio</label>
+                                                            <div
+                                                                class="file-upload drag-file w-100 d-flex align-items-center justify-content-center flex-column mb-2">
+                                                                <span class="upload-img d-block mb-2"><img
+                                                                        src="assets/img/icons/upload-icon.svg"
+                                                                        alt="Img"></span>
+                                                                <p class="mb-0">Arrastrar y Soltar o <span
+                                                                        class="text-primary">
+                                                                        Buscar</span></p>
+                                                                <input type="file" accept="video/image">
+                                                            </div>
+                                                            <div class="avatar avatar-gallery me-3">
+                                                                <img src="assets/img/gallery/gallery-03.jpg" alt="Img">
+                                                                <a href="javascript:void(0);"
+                                                                    class="trash-top d-flex align-items-center justify-content-center">
+                                                                    <i class="ti ti-trash"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Enlace de Video</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex align-items-center justify-content-end border-top pt-3">
+                                                    <button type="button"
+                                                        class="btn btn-light prev_btn me-3">Atrás</button>
+                                                    <button type="button" class="btn btn-dark next_btn">Guardar y
+                                                        Continuar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </fieldset>
+                                <fieldset>
+                                    <h4 class="mb-3">Preguntas Frecuentes</h4>
+                                    <form action="create-service.html">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="add-faq-info">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Pregunta</label>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Respuesta</label>
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="javascript:void(0);"
+                                                    class="text-primary d-inline-flex align-items-center fs-14 add-extra-faq mb-3"><i
+                                                        class="ti ti-circle-plus me-2"></i>Agregar Nuevo</a>
+                                                <div
+                                                    class="d-flex align-items-center justify-content-end border-top pt-3">
+                                                    <button type="button"
+                                                        class="btn btn-light prev_btn me-3">Atrás</button>
+                                                    <button type="button" class="btn btn-dark next_btn">Guardar y
+                                                        Continuar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </fieldset>
+                                <fieldset>
+                                    <h4 class="mb-3">SEO</h4>
+                                    <form action="create-service.html">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="border-bottom mb-3 pb-3">
+                                                    <h4 class="fs-20">Detalles de SEO</h4>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Meta Título <span
+                                                                    class="text-danger">
+                                                                    *</span> </label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Meta Palabras Clave <span
+                                                                    class="text-danger"> *</span></label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Meta Descripción <span
+                                                                    class="text-danger"> *</span></label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex align-items-center justify-content-end border-top pt-3">
+                                                    <button type="button"
+                                                        class="btn btn-light prev_btn me-3">Atrás</button>
+                                                    <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                                        data-bs-target="#successmodal">Guardar y Continuar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div>
+                                <div class="text-end mb-4">
+                                    <a href="javascript:void(0);" class="btn btn-light"><i
+                                            class="ti ti-eye me-2"></i>Vista Previa en Vivo</a>
+                                </div>
+                                <h4 class="mb-4">Vista Rápida</h4>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-img">
+                                    <div class="slide-images">
+                                        <a href="service-details.html">
+                                            <img src="assets/img/services/service-27.jpg" class="img-fluid" alt="img">
+                                        </a>
+                                    </div>
+                                    <span class="trend-tag">Lavado de Auto</span>
+                                </div>
+                                <div class="service-content">
+                                    <h6 class="text-truncate mb-1"><a href="service-details.html">Servicios
+                                            Eléctricos</a>
+                                    </h6>
+                                    <p class="fw-medium fs-14 mb-3"><i class="ti ti-map-pin me-1"></i>Montana, USA</p>
+                                    <p class="service-price">$20.00 <span class="text-decoration-line-through">$25.00
+                                        </span><span> /hr</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Jquery JS -->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+        <!-- select JS -->
+        <script src="assets/plugins/select2/js/select2.min.js"></script>
+
+        <!-- Ckeditor Js -->
+        <script src="assets/plugins/ckeditor/ckeditor.js"></script>
+
+        <!-- Owlcarousel Js -->
+        <script src="assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Script JS -->
+        <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
