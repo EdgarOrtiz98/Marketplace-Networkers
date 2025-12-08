@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Marketplace - Negocios en Red</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.svg">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- Animation CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+
+	<!-- Tabler Icon CSS -->
+	<link rel="stylesheet" href="assets/plugins/tabler-icons/tabler-icons.css">
+
+	<!-- Fontawesome Icon CSS -->
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+	<!-- select CSS -->
+	<link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+
+	<!-- Owlcarousel CSS -->
+	<link rel="stylesheet" href="assets/plugins/owlcarousel/owl.carousel.min.css">
+
+	<!-- Mobile CSS-->
+	<link rel="stylesheet" href="assets/plugins/intltelinput/css/intlTelInput.css">
+	<link rel="stylesheet" href="assets/plugins/intltelinput/css/demo.css">
+
+	<!-- Feather CSS  #ad0808 -->
+	<link rel="stylesheet" href="assets/css/feather.css">
+
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+	<!-- Cabecera -->
+	<header class="header header-new">
+		<div class="container-fluid">
+			
+			<nav class="navbar navbar-expand-lg header-nav">
+				<div class="navbar-header">
+					<a id="mobile_btn" href="javascript:void(0);">>
+					</a>
+					<a href="index.html" class="navbar-brand logo">
+						<img src="assets/img/logo.jpg" class="logo" alt="Logo">
+					</a>
+					<a href="index.html" class="navbar-brand logo-small">
+						<img src="assets/img/logo.jpg" class="img-fluid" alt="Logo">
+					</a>
+				</div>
+				<div class="main-menu-wrapper">
+					<div class="menu-header">
+						<a href="index.html" class="menu-logo">
+							<img src="assets/img/logo.jpg" class="img-fluid" alt="Logo">
+						</a>
+						<a id="menu_close" class="menu-close" href="javascript:void(0);"> <i class="fas fa-times"></i></a>
+					</div>
+					<ul class="main-nav align-items-lg-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#categorias">Categorías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">Quiénes somos</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="about-us.html#como-trabajamos">¿Cómo trabajamos?</a>
+                         </li>
+						 <li class="nav-item">
+                            <a class="nav-link" href="favourites.html">Mis Pedidos</a>
+                         </li>
+                    </ul>
+
+				</div>
+				<ul class="nav header-navbar-rht">
+					<li class="nav-item pe-1">
+						<a class="nav-link btn btn-light" href="login.html" ><i class="ti ti-lock me-2"></i> Iniciar sesión</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn btn-linear-primary" href="register.html" ><i class="ti ti-user-filled me-2"></i>Únete</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+		<!-- /Cabecera -->
+
+	<!-- Breadcrumb -->
+	<div class="breadcrumb-bar text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-12">
+					<h2 class="breadcrumb-title mb-2">Mis Pedidos</h2>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb justify-content-center mb-0">
+							<li class="breadcrumb-item"><a href="index.html"><i class="ti ti-home-2"></i></a></li>
+							<li class="breadcrumb-item">Inicio</li>
+							<li class="breadcrumb-item active" aria-current="page">Mis Pedidos</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /Breadcrumb -->
+
+	<!-- Page Wrapper -->
+	<div class="page-wrapper">
+		<div class="content">
+			<div class="container">
+					<div class="row">
+						<div class="col-xl-3 col-lg-4 theiaStickySidebar">
+							<div class="card mb-4 mb-lg-0">
+								<div class="card-body">
+									<form action="search.html">
+										<div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
+											<h5><i class="ti ti-filter-check me-2"></i>Filtros</h5>
+											<a href="javascript:void(0);">Borrar filtros</a>
+										</div>
+										<div class="mb-3 pb-3 border-bottom">
+											<label class="form-label">Buscar por nombre</label>
+											<input type="text" class="form-control" placeholder="¿Que servicio buscas?">
+										</div>
+										<div class="mb-3 pb-3 border-bottom">
+											<label class="form-label">Buscar por categoría</label>
+
+											<select class="form-select">
+												<option value="">Selecciona una categoría</option>
+												<option value="electricista">Electricista</option>
+												<option value="plomeria">Plomería</option>
+												<option value="jardineria">Jardinería</option>
+												<option value="limpieza">Limpieza</option>
+												<option value="pintura">Pintura</option>
+											</select>
+										</div>
+
+										
+										<button type="submit" class="btn btn-dark w-100">Buscar</button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-9 col-lg-8">
+							<div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+								<h4 >Tiene <span class="text-primary">11 Pedidos</span></h4>
+
+							</div>
+							<div class="row justify-content-center align-items-center">
+								<div class="col-xl-4 col-md-6">
+									<div class="card p-0">
+										<div class="card-body p-0">
+											<div class="img-sec w-100">
+												<a href="service-details.html"><img src="assets/img/providers/provider-13.jpg" class="img-fluid rounded-top w-100" alt="img"></a>
+												<div class="image-tag d-flex justify-content-end align-items-center">
+													<span class="trend-tag">Alimentos y Bebidas</span>
+													<a href="javascript:void(0);" class="fav-icon like-icon"><i class="ti ti-heart"></i></a>
+												</div>
+												<span class="image-logo avatar avatar-md border rounded-circle">
+													<img src="assets/img/providers/provider-01.jpg" class="img-fluid rounded-circle " alt="logo">
+												</span>
+											</div>
+											<div class="p-3">
+												<h5 class="mb-2">
+													<a href="service-details.html">Buffet</a>
+												</h5>
+												<div class="d-flex justify-content-between align-items-center mb-3">
+													<p class="fs-14 mb-0"><i class="ti ti-map-pin me-2"></i>Tabasco 2000</p>
+													<span class="rating text-gray fs-14"><i class="fa fa-star filled me-1"></i>4.9</span>
+												</div>
+												<div class="d-flex justify-content-between align-items-center">
+													<h5>$25.00 <span class="fs-13 text-gray"><del>$30.00/hr</del></span></h5>
+													<a href="booking.html" class="btn bg-primary-transparent">Pendiente</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-4 col-md-6">
+									<div class="card p-0">
+										<div class="card-body p-0">
+											<div class="img-sec w-100">
+												<a href="service-details.html"><img src="assets/img/providers/provider-13.jpg" class="img-fluid rounded-top w-100" alt="img"></a>
+												<div class="image-tag d-flex justify-content-end align-items-center">
+													<span class="trend-tag">Alimentos y Bebidas</span>
+													<a href="javascript:void(0);" class="fav-icon like-icon"><i class="ti ti-heart"></i></a>
+												</div>
+												<span class="image-logo avatar avatar-md border rounded-circle">
+													<img src="assets/img/providers/provider-01.jpg" class="img-fluid rounded-circle " alt="logo">
+												</span>
+											</div>
+											<div class="p-3">
+												<h5 class="mb-2">
+													<a href="service-details.html">Platillos para bodas</a>
+												</h5>
+												<div class="d-flex justify-content-between align-items-center mb-3">
+												</div>
+												<div class="d-flex justify-content-between align-items-center">
+													<h5>$25.00 <span class="fs-13 text-gray"></span></h5>
+													<a href="booking.html" class="btn bg-primary-transparent">Entregado</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<nav aria-label="Page navigation">
+								<ul class="paginations d-flex justify-content-center align-items-center">
+								<li class="page-item me-3">
+									<a class="page-link"><i class="ti ti-arrow-left me-2"></i>Anterior</a>
+								</li>
+								<li class="page-item me-2"><a class="page-link-1 active d-flex justify-content-center align-items-center " href="javascript:void(0);">1</a></li>
+								<li class="page-item me-2"><a class="page-link-1 d-flex justify-content-center align-items-center " href="javascript:void(0);">2</a></li>
+								<li class="page-item me-3"><a class="page-link-1 d-flex justify-content-center align-items-center " href="javascript:void(0);">3</a></li>
+								<li class="page-item ">
+									<a class="page-link" href="javascript:void(0);">Siquiente<i class="ti ti-arrow-right ms-2"></i></a>
+								</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	<!-- /Page Wrapper -->
+
+	<!-- footer -->
+	<footer>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="d-flex align-items-center justify-content-between flex-wrap">
+							<p class="mb-2">Copyright &copy; 2025 - Todos los derechos reservados | BNI Marketplace</p>
+							<ul class="menu-links mb-2">
+								<li>
+									<a href="terms-condition.html"> Términos y condiciones</a>
+								</li>
+								<li>
+									<a href="privacy-policy.html">Políticas de privacidad</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+	</footer>
+	<!-- /footer -->
+
+	<!-- Jquery JS -->
+	<script src="assets/js/jquery-3.7.1.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Wow JS -->
+	<script src="assets/js/wow.min.js"></script>
+
+	<!-- select JS -->
+	<script src="assets/plugins/select2/js/select2.min.js"></script>
+
+	<!-- Sticky Sidebar JS -->
+	<script src="assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+	<script src="assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+	<!-- Owlcarousel Js -->
+	<script src="assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+
+	<!-- counterup JS -->
+	<script src="assets/js/cursor.js"></script>
+
+	<!-- Script JS -->
+	<script src="assets/js/script.js"></script>
+</body>
+
+</html>
