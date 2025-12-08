@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,34 +23,79 @@
 	<!-- Style CSS -->
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-	
-	
+
+
 	<style>
-		
+
 	</style>
 </head>
-	
+
 <body class="authentication-page ">
 	<div class="d-flex justify-content-between vh-100 overflow-auto flex-column">
-	
-	
 
-	<!-- Main Wrapper -->
-	<div class="main-wrapper">
-		<div class="container">
+		<!-- Cabecera -->
+		<header class="header header-new">
+			<div class="container-fluid">
+
+				<nav class="navbar navbar-expand-lg header-nav">
+					<div class="navbar-header">
+						<a id="mobile_btn" href="javascript:void(0);">>
+						</a>
+						<a href="index.html" class="navbar-brand logo">
+							<img src="assets/img/logo.svg" class="logo" alt="Logo">
+						</a>
+						<a href="index.html" class="navbar-brand logo-small">
+							<img src="assets/img/logo.jpg" class="img-fluid" alt="Logo">
+						</a>
+					</div>
+					<div class="main-menu-wrapper">
+						<div class="menu-header">
+							<a href="index.html" class="menu-logo">
+								<img src="assets/img/logo.jpg" class="img-fluid" alt="Logo">
+							</a>
+							<a id="menu_close" class="menu-close" href="javascript:void(0);"> <i
+									class="fas fa-times"></i></a>
+						</div>
+						<ul class="main-nav align-items-lg-center">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="index.html#categorias">Categorías</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about-us.html">Quiénes somos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about-us.html#como-trabajamos">¿Cómo trabajamos?</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="favourites.html">Mis Pedidos</a>
+							</li>
+						</ul>
+
+					</div>
+					<ul class="nav header-navbar-rht">
+
+						<li class="nav-item">
+							<a class="nav-link btn btn-linear-primary" href="register.html"><i
+									class="ti ti-user-filled me-2"></i>Únete</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- /Cabecera -->
+
+		<!-- Main Wrapper -->
+		<div class="main-wrapper">
+			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-5 mx-auto">
 						<form action="index.html">
 							<div class="d-flex flex-column justify-content-center">
 								<div class="authentication-header">
-									<div class="container-logo">
-										<div class="col-md-12">
-											<div class="text-center">
-												<img src="assets/img/logo.svg"class="logologil" alt="logo">
-											</div>
-										</div>
-									</div>
-								</div>	
+								</div>
 								<div class="card p-sm-4 my-5">
 									<div class="card-body">
 										<div class="text-center mb-3">
@@ -63,20 +109,25 @@
 										<div class="mb-3">
 											<div class="d-flex align-items-center justify-content-between flex-wrap">
 												<label class="form-label">Contraseña</label>
-												<a href="reset-password.html" class="text-primary fw-medium text-decoration-underline mb-1 fs-14">¿Olvidaste tu contraseña?</a>
+												<a href="reset-password.html"
+													class="text-primary fw-medium text-decoration-underline mb-1 fs-14">¿Olvidaste
+													tu contraseña?</a>
 											</div>
 											<input type="password" class="form-control">
 										</div>
 										<div class="mb-3">
-											<div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
+											<div
+												class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
 												<div class="form-check">
-													<input class="form-check-input" type="checkbox" value="" id="remember_me">
+													<input class="form-check-input" type="checkbox" value=""
+														id="remember_me">
 													<label class="form-check-label" for="remember_me">
 														Recuerdame
 													</label>
 												</div>
 												<div class="form-check">
-													<input class="form-check-input" type="checkbox" value="" id="otp_signin">
+													<input class="form-check-input" type="checkbox" value=""
+														id="otp_signin">
 													<label class="form-check-label" for="otp_signin">
 														Sign in with OTP
 													</label>
@@ -84,58 +135,61 @@
 											</div>
 										</div>
 										<div class="mb-3">
-											<a href="networker-business.html" class="btn btn-lg btn-linear-primary w-100">Iniciar Sesion </a>
+											<a href="networker-business.html"
+												class="btn btn-lg btn-linear-primary w-100">Iniciar Sesion </a>
 										</div>
-										
+
 										<div class="d-flex justify-content-center">
-											<p>¿Aun no tienes cuenta? <a href="register.html" class="text-primary"> Crear cuenta</a></p>
+											<p>¿Aun no tienes cuenta? <a href="register.html" class="text-primary">
+													Crear cuenta</a></p>
 										</div>
 									</div>
-								</div>	
+								</div>
 							</div>
 						</form>
-					</div>
-			</div>
-		</div>
-	</div>
-	<!-- /Main Wrapper -->
-	
-	<!-- footer -->
-	<footer>
-		
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="d-flex align-items-center justify-content-between flex-wrap">
-							<p class="mb-2">Copyright &copy; 2025 - Todos los derechos reservados | Marketplace - Negocios en Red</p>
-							<ul class="menu-links mb-2">
-								<li>
-									<a href="terms-condition.html"> Términos y condiciones</a>
-								</li>
-								<li>
-									<a href="privacy-policy.html">Políticas de privacidad</a>
-								</li>
-							</ul>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
+		<!-- /Main Wrapper -->
 
-	</footer>
-	<!-- /footer -->
+		<!-- footer -->
+		<footer>
 
-	
-</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="d-flex align-items-center justify-content-between flex-wrap">
+								<p class="mb-2">Copyright &copy; 2025 - Todos los derechos reservados | Marketplace -
+									Negocios en Red</p>
+								<ul class="menu-links mb-2">
+									<li>
+										<a href="terms-condition.html"> Términos y condiciones</a>
+									</li>
+									<li>
+										<a href="privacy-policy.html">Políticas de privacidad</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</footer>
+		<!-- /footer -->
+
+
+	</div>
 
 	<!-- Cursor -->
 	<div class="xb-cursor tx-js-cursor">
-        <div class="xb-cursor-wrapper">
-            <div class="xb-cursor--follower xb-js-follower"></div>
-        </div>
-    </div>
+		<div class="xb-cursor-wrapper">
+			<div class="xb-cursor--follower xb-js-follower"></div>
+		</div>
+	</div>
 	<!-- /Cursor -->
 
 	<!-- Jquery JS -->
@@ -144,9 +198,10 @@
 	<!-- Bootstrap JS -->
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
 
-	
+
 	<!-- Script JS -->
 	<script src="assets/js/script.js"></script>
-	
+
 </body>
+
 </html>

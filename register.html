@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,137 +27,196 @@
 	<!-- Style CSS -->
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
-	
+
 <body class="authentication-page">
+	<!-- Cabecera -->
+	<header class="header header-new">
+		<div class="container-fluid">
+
+			<nav class="navbar navbar-expand-lg header-nav">
+				<div class="navbar-header">
+					<a id="mobile_btn" href="javascript:void(0);">>
+					</a>
+					<a href="index.html" class="navbar-brand logo">
+						<img src="assets/img/logo.jpg" class="logo" alt="Logo">
+					</a>
+					<a href="index.html" class="navbar-brand logo-small">
+						<img src="assets/img/logo.jpg" class="img-fluid" alt="Logo">
+					</a>
+				</div>
+				<div class="main-menu-wrapper">
+					<div class="menu-header">
+						<a href="index.html" class="menu-logo">
+							<img src="assets/img/logo.jpg" class="img-fluid" alt="Logo">
+						</a>
+						<a id="menu_close" class="menu-close" href="javascript:void(0);"> <i
+								class="fas fa-times"></i></a>
+					</div>
+					<ul class="main-nav align-items-lg-center">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html#categorias">Categorías</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about-us.html">Quiénes somos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about-us.html#como-trabajamos">¿Cómo trabajamos?</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="favourites.html">Mis Pedidos</a>
+						</li>
+					</ul>
+
+				</div>
+				<ul class="nav header-navbar-rht">
+					<li class="nav-item pe-1">
+						<a class="nav-link btn btn-light" href="login.html"><i class="ti ti-lock me-2"></i> Iniciar
+							sesión</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- /Cabecera -->
+
 
 	<div class="d-flex justify-content-between vh-100 overflow-auto flex-column">
-		
 
-	<!-- Main Wrapper -->
-	<div class="main-wrapper">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-5 mx-auto">
-					<form action="login.html">
-						<div class="d-flex flex-column justify-content-center">
-							<div class="container-logo">
-										<div class="col-md-12">
-											<div class="text-center">
-												<img src="assets/img/logo.svg"class="logologil" alt="logo">
-											</div>
-										</div>
-									</div>
-							<div class="card p-sm-4 my-5">
-								<div class="card-body">
-									<div class="text-center mb-3 ">
-										<h3 class="mb2">Registrarse</h3>
-										<p>Ingrese sus dato correctamente</p>
-									</div>
-									<div class="mb-3">
-										<label class="form-label">Nombre </label>
-										<input type="text" class="form-control">
-									</div>
-									<div class="container-logo"><div class="mb-3">
-										<label class="form-label">Apellido Paterno </label>
-										<input type="text" class="form-control">
-									</div>
-									<div class="mb-3">
-										<label class="form-label">Apellido Materno </label>
-										<input type="text" class="form-control">
-									</div></div>
-									
-									<div class="mb-3">
-										<label class="form-label">Correo Electronico</label>
-										<input type="email" class="form-control">
-									</div>
-									<div class="mb-3">
-										<label class="form-label">Numero de Telefono</label>
-                                        <input class="form-control" id="phone" name="phone" type="text">
-									</div>
-									<div class="mb-3">
-										<div class="d-flex align-items-center justify-content-between flex-wrap">
-											<label class="form-label">Contraseña</label>
-											<p  class="text-gray-6 fw-medium  mb-1">La contraseña debe tener mas de 8 caracteres</p>
-										</div>
-										<input type="password" class="form-control">
-									</div>
-									<div class="mb-3">
-										<label class="form-label">	Referido </label>
-										<input type="text" class="form-control">
-									</div>
-									<div class="mb-3">
-										<div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="" id="remember_me">
-												<label class="form-check-label" for="remember_me">
-														Estoy de acuerdo <a href="javascript:void(0);" class="text-primary text-decoration-underline">con los terminos</a> y <a href="javascript:void(0);" class="text-primary text-decoration-underline">la politica de privacidad</a>
-												</label>
-											</div>
-										</div>
-									</div>
-									<div class="mb-3">
-										<button type="submit" class="btn btn-lg btn-linear-primary w-100">Registrarse</button>
-									</div>
-									<div class=" d-flex justify-content-center">
-										<p>¿Ya tienes cuenta? <a href="login.html" class="text-primary">Iniciar sesion</a></p>
-									</div>
-								</div>
-								
-							</div>						
-							
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- /Main Wrapper -->
 
-	<footer>
-		
-		<div class="footer-bottom">
+		<!-- Main Wrapper -->
+		<div class="main-wrapper">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="d-flex align-items-center justify-content-between flex-wrap">
-							<p class="mb-2">Copyright &copy; 2025 - Todos los derechos reservados | BNI Marketplace</p>
-							<ul class="menu-links mb-2">
-								<li>
-									<a href="terms-condition.html"> Términos y condiciones</a>
-								</li>
-								<li>
-									<a href="privacy-policy.html">Políticas de privacidad</a>
-								</li>
-							</ul>
-						</div>
+				<div class="row justify-content-center">
+					<div class="col-md-5 mx-auto">
+						<form action="login.html">
+							<div class="d-flex flex-column justify-content-center">
+								<div class="card p-sm-4 my-5">
+									<div class="card-body">
+										<div class="text-center mb-3 ">
+											<h3 class="mb2">Registrarse</h3>
+											<p>Ingrese sus dato correctamente</p>
+										</div>
+										<div class="mb-3">
+											<label class="form-label">Nombre </label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="mb-3">
+											<div class="mb-3">
+												<label class="form-label">Apellido Paterno </label>
+												<input type="text" class="form-control">
+											</div>
+											<div class="mb-3">
+												<label class="form-label">Apellido Materno </label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+
+										<div class="mb-3">
+											<label class="form-label">Correo Electronico</label>
+											<input type="email" class="form-control">
+										</div>
+										<div class="mb-3">
+											<label class="form-label">Numero de Telefono</label>
+											<input class="form-control" id="phone" name="phone" type="text">
+										</div>
+										<div class="mb-3">
+											<div class="d-flex align-items-center justify-content-between flex-wrap">
+												<label class="form-label">Contraseña</label>
+												<p class="text-gray-6 fw-medium  mb-1">La contraseña debe tener mas de 8
+													caracteres</p>
+											</div>
+											<input type="password" class="form-control">
+										</div>
+										<div class="mb-3">
+											<label class="form-label"> Referido </label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="mb-3">
+											<div
+												class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value=""
+														id="remember_me">
+													<label class="form-check-label" for="remember_me">
+														Estoy de acuerdo con los <a href="javascript:void(0);"
+															class="text-primary text-decoration-underline">terminos</a>
+														y <a href="javascript:void(0);"
+															class="text-primary text-decoration-underline">la politica
+															de privacidad</a>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="mb-3">
+											<button type="submit"
+												class="btn btn-lg btn-linear-primary w-100">Registrarse</button>
+										</div>
+										<div class=" d-flex justify-content-center">
+											<p>¿Ya tienes cuenta? <a href="login.html" class="text-primary">Iniciar
+													sesion</a></p>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
-		
+		<!-- /Main Wrapper -->
 
-	</footer>
-	<!-- /footer -->
+		<footer>
 
-	<!-- Cursor -->
-	<div class="xb-cursor tx-js-cursor">
-        <div class="xb-cursor-wrapper">
-            <div class="xb-cursor--follower xb-js-follower"></div>
-        </div>
-    </div>
-	<!-- /Cursor -->
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="d-flex align-items-center justify-content-between flex-wrap">
+								<p class="mb-2">Copyright &copy; 2025 - Todos los derechos reservados | BNI Marketplace
+								</p>
+								<ul class="menu-links mb-2">
+									<li>
+										<a href="terms-condition.html"> Términos y condiciones</a>
+									</li>
+									<li>
+										<a href="privacy-policy.html">Políticas de privacidad</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-	<!-- Jquery JS -->
-	<script src="assets/js/jquery-3.7.1.min.js"></script>
 
-	<!-- Bootstrap JS -->
-	<script src="assets/js/bootstrap.bundle.min.js"></script>
+		</footer>
+		<!-- /footer -->
 
-    <!-- Mobile Input -->
-    <script src="assets/plugins/intltelinput/js/intlTelInput.js"></script>
-	
-	<!-- Script JS -->
-	<script src="assets/js/script.js"></script>
-	
+		<!-- Cursor -->
+		<div class="xb-cursor tx-js-cursor">
+			<div class="xb-cursor-wrapper">
+				<div class="xb-cursor--follower xb-js-follower"></div>
+			</div>
+		</div>
+		<!-- /Cursor -->
+
+		<!-- Jquery JS -->
+		<script src="assets/js/jquery-3.7.1.min.js"></script>
+
+		<!-- Bootstrap JS -->
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Mobile Input -->
+		<script src="assets/plugins/intltelinput/js/intlTelInput.js"></script>
+
+		<!-- Script JS -->
+		<script src="assets/js/script.js"></script>
+
 </body>
+
 </html>
