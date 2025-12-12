@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Truelysell</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.svg">
+
+	<!-- Aos -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- Tabler Icon CSS -->
+	<link rel="stylesheet" href="assets/plugins/tabler-icons/tabler-icons.css">
+
+	<!-- select CSS -->
+	<link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+
+	<!-- Datatables CSS -->
+	<link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css">
+	<link rel="stylesheet" href="assets/plugins/datatables/datatables.css">
+
+	<!-- Datepicker CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+
+	<!-- Fontawesome Icon CSS -->
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/feather.css">
+
+	<!-- Tagsinput CSS -->
+	<link rel="stylesheet" href="assets/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
+
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+	<!-- Cabecera -->
+	<header class="header header-new">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg header-nav">
+				<div class="navbar-header">
+					<a id="mobile_btn" href="javascript:void(0);">>
+					</a>
+					<a href="index.html" class="navbar-brand logo">
+						<img src="assets/img/logo.svg" class="logo" alt="Logo">
+					</a>
+					<a href="index.html" class="navbar-brand logo-small">
+						<img src="assets/img/logo.jpg" class="img-fluid" alt="Logo">
+					</a>
+				</div>
+				<div class="main-menu-wrapper">
+					<div class="menu-header">
+						<a href="index.html" class="menu-logo">
+							<img src="assets/img/logo.jpg" class="img-fluid" alt="Logo">
+						</a>
+						<a id="menu_close" class="menu-close" href="javascript:void(0);"> <i class="fas fa-times"></i></a>
+					</div>
+					<ul class="main-nav align-items-lg-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#categorias">Categorías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">Quiénes somos</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="about-us.html#como-trabajamos">¿Cómo trabajamos?</a>
+                         </li>
+						 <li class="nav-item">
+                            <a class="nav-link" href="favourites.html">Mis Pedidos</a>
+                         </li>
+                    </ul>
+
+				</div>
+				<ul class="nav header-navbar-rht">
+					<li class="nav-item pe-1">
+						<a id="botonLogin" class="nav-link btn btn-light" href="login.html">
+							<i class="ti ti-lock me-2"></i> Iniciar sesión
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn btn-linear-primary" href="register.html" ><i class="ti ti-user-filled me-2"></i>Únete</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const botonLogin = document.getElementById("botonLogin");
+			const rol = localStorage.getItem("rol");
+
+			if (rol) {
+				botonLogin.innerHTML = '<i class="ti ti-user me-2"></i> Mi Perfil';
+				botonLogin.href = "mi-perfil.html";  
+			}
+		});
+	</script>
+
+		<!-- /Cabecera -->
+
+	<!-- Breadcrumb -->
+	<div class="breadcrumb-bar text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-12">
+					<h2 class="breadcrumb-title mb-2">Mi Perfil</h2>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb justify-content-center mb-0">
+							<li class="breadcrumb-item"><a href="index.html"><i class="ti ti-home-2"></i></a></li>
+							<li class="breadcrumb-item active" aria-current="page">Perfil</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- /Breadcrumb -->
+
+	<!-- Page Wrapper -->
+	<div class="page-wrapper">
+		<div class="content">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-xl-3 col-lg-4 theiaStickySidebar">
+						<div class="card user-sidebar mb-4 mb-lg-0">
+                            <div class="card-header user-sidebar-header mb-4">
+                                <div class="d-flex justify-content-center align-items-center flex-column">
+                                    <span class="user rounded-circle avatar avatar-xxl mb-2">
+                                        <img src="assets/img/profiles/avatar-21.jpg" class="img-fluid rounded-circle" alt="Img">
+                                    </span>
+                                    <h6 class="mb-2">juan sanchez</h6>
+                                    <p class="fs-14">Miembro desde 2025</p>
+                                </div>
+                            </div>
+							<div class="card-body user-sidebar-body p-0">
+								<ul>
+
+                                    <li class="mb-0">
+                                        <a href="login.html" class="d-flex align-items-center">
+                                            <i class="ti ti-logout me-2"></i>
+                                            Cerrar Sesion
+                                        </a>
+                                    </li>
+                                </ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-9 col-lg-8">
+                        <h4 class="mb-3"> Configuracion</h4>
+                        <h6 class="mb-4">Foto de perfil</h6>
+                        <div class="d-flex align-items-center mb-4">
+                            <span class="avatar avatar-xl me-2">
+                                <img src="assets/img/profiles/avatar-02.jpg" class="rounded-circle" alt="user">
+                            </span>
+                            <div>
+                                <a href="" class="btn btn-dark me-2 mb-2"><i class="feather-upload-cloud me-1">subir foto de perfil</i></a> 
+                                <a href="javascript:void(0);" class="btn btn-light mb-2">eliminar foto de perfil</a>
+                                <p>*El tipo de imagen debe ser jpg o png.</p>
+                            </div>
+                        </div>   
+                        <h6>General Information</h6>
+                        <div class="general-info mb-0">
+							<div class="row mb-4">
+								<div class="col-md-6">
+									<div class="mb-3">
+										<label class="form-label">Nombre</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="mb-3">
+									<label class="form-label">Apellidos </label>
+									<input type="text" class="form-control" >
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="mb-3">
+									<label class="form-label">Correo electronico</label>
+									<input type="email" class="form-control">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="mb-3">
+									<label class="form-label">Numero de Telefono</label>
+									<input type="text" class="form-control">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="mb-3">
+									<label class="form-label">Fecha de Nacimiento</label>
+									<div class=" input-icon position-relative">
+										<span class="input-icon-addon"><i class="ti ti-calendar"></i></span>
+										<input type="text" class="form-control datetimepicker" placeholder="dd-mm-yyyy">
+									</div>
+								</div>
+							</div>
+							
+						</div>
+                        <h6 class="user-title">Dirrecion </h6>
+                        <div class="row">
+							<div class="col-md-12">
+								<div class=" mb-3">
+									<label class="form-label">Domicilio</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+
+                        </div>
+                        <div class="acc-submit d-flex justify-content-end align-items-center">
+                        <a href="javascript:void(0);" class="btn btn-light me-2">Editar Perfil</a>
+                        <a href="javascript:void(0);" class="btn btn-dark">Guardar cambios</a>
+                        </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /Page Wrapper -->
+
+	<!-- footer -->
+	<footer>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="d-flex align-items-center justify-content-between flex-wrap">
+							<p class="mb-2">Copyright &copy; 2025 - Todos los derechos reservados | Marketplace - Negocios en Red</p>
+							<ul class="menu-links mb-2">
+								<li>
+									<a href="terms-condition.html"> Términos y condiciones</a>
+								</li>
+								<li>
+									<a href="privacy-policy.html">Políticas de privacidad</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+	</footer>
+	<!-- /footer -->
+
+	<!-- /Cancel Appointment -->
+
+	<!-- Jquery JS -->
+	<script src="assets/js/jquery-3.7.1.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Wow JS -->
+	<script src="assets/js/wow.min.js"></script>
+
+	<!-- select JS -->
+	<script src="assets/plugins/select2/js/select2.min.js"></script>
+
+	<!-- Sticky Sidebar JS -->
+	<script src="assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+	<script src="assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+	<!-- Datepicker Core JS -->
+	<script src="assets/plugins/moment/moment.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+
+	<!-- Cursor JS -->
+	<script src="assets/js/cursor.js"></script>
+
+	<!-- Tagsinput JS -->
+	<script src="assets/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.js"></script>
+
+	<!-- Script JS -->
+	<script src="assets/js/script.js"></script>
+</body>
+
+</html>

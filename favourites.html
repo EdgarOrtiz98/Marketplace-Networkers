@@ -45,7 +45,6 @@
 	<!-- Cabecera -->
 	<header class="header header-new">
 		<div class="container-fluid">
-			
 			<nav class="navbar navbar-expand-lg header-nav">
 				<div class="navbar-header">
 					<a id="mobile_btn" href="javascript:void(0);">>
@@ -85,7 +84,9 @@
 				</div>
 				<ul class="nav header-navbar-rht">
 					<li class="nav-item pe-1">
-						<a class="nav-link btn btn-light" href="login.html" ><i class="ti ti-lock me-2"></i> Iniciar sesión</a>
+						<a id="botonLogin" class="nav-link btn btn-light" href="login.html">
+							<i class="ti ti-lock me-2"></i> Iniciar sesión
+						</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link btn btn-linear-primary" href="register.html" ><i class="ti ti-user-filled me-2"></i>Únete</a>
@@ -94,6 +95,19 @@
 			</nav>
 		</div>
 	</header>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const botonLogin = document.getElementById("botonLogin");
+			const rol = localStorage.getItem("rol");
+
+			if (rol) {
+				botonLogin.innerHTML = '<i class="ti ti-user me-2"></i> Mi Perfil';
+				botonLogin.href = "mi-perfil.html";  
+			}
+		});
+	</script>
+
 		<!-- /Cabecera -->
 
 	<!-- Breadcrumb -->
@@ -120,40 +134,28 @@
 		<div class="content">
 			<div class="container">
 					<div class="row">
-						<div class="col-xl-3 col-lg-4 theiaStickySidebar">
-							<div class="card mb-4 mb-lg-0">
-								<div class="card-body">
-									<form action="search.html">
-										<div class="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
-											<h5><i class="ti ti-filter-check me-2"></i>Filtros</h5>
-											<a href="javascript:void(0);">Borrar filtros</a>
+						<div class="row mb-4">
+							<div class="col-12 d-flex justify-content-end">
+								<div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 col-12 p-0">
+									<div class="card">
+										<div class="card-body">
+											<form action="search.html">
+												<div class="input-group mb-3">
+													<input type="text" class="form-control" placeholder="¿Qué servicio buscas?">
+													<button class="btn btn-linear-primary" type="submit">
+														<i class="ti ti-search"></i>
+													</button>
+												</div>
+											</form>
 										</div>
-										<div class="mb-3 pb-3 border-bottom">
-											<label class="form-label">Buscar por nombre</label>
-											<input type="text" class="form-control" placeholder="¿Que servicio buscas?">
-										</div>
-										<div class="mb-3 pb-3 border-bottom">
-											<label class="form-label">Buscar por categoría</label>
-
-											<select class="form-select">
-												<option value="">Selecciona una categoría</option>
-												<option value="electricista">Electricista</option>
-												<option value="plomeria">Plomería</option>
-												<option value="jardineria">Jardinería</option>
-												<option value="limpieza">Limpieza</option>
-												<option value="pintura">Pintura</option>
-											</select>
-										</div>
-
-										
-										<button type="submit" class="btn btn-dark w-100">Buscar</button>
-									</form>
+									</div>
 								</div>
 							</div>
 						</div>
+
 						<div class="col-xl-9 col-lg-8">
 							<div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
-								<h4 >Tiene <span class="text-primary">11 Pedidos</span></h4>
+								<h4 >Tiene <span class="text-primary">6 Pedidos</span></h4>
 
 							</div>
 							<div class="row justify-content-center align-items-center">
@@ -161,7 +163,7 @@
 									<div class="card p-0">
 										<div class="card-body p-0">
 											<div class="img-sec w-100">
-												<a href="service-details.html"><img src="assets/img/providers/provider-13.jpg" class="img-fluid rounded-top w-100" alt="img"></a>
+												<a href="service-details-cliente.html"><img src="assets/img/providers/provider-13.jpg" class="img-fluid rounded-top w-100" alt="img"></a>
 												<div class="image-tag d-flex justify-content-end align-items-center">
 													<span class="trend-tag">Alimentos y Bebidas</span>
 													<a href="javascript:void(0);" class="fav-icon like-icon"><i class="ti ti-heart"></i></a>
@@ -172,7 +174,7 @@
 											</div>
 											<div class="p-3">
 												<h5 class="mb-2">
-													<a href="service-details.html">Buffet</a>
+													<a href="service-details-cliente.html">Buffet</a>
 												</h5>
 												<div class="d-flex justify-content-between align-items-center mb-3">
 													<p class="fs-14 mb-0"><i class="ti ti-map-pin me-2"></i>Tabasco 2000</p>
@@ -180,7 +182,7 @@
 												</div>
 												<div class="d-flex justify-content-between align-items-center">
 													<h5>$25.00 <span class="fs-13 text-gray"><del>$30.00/hr</del></span></h5>
-													<a href="booking.html" class="btn bg-primary-transparent">Pendiente</a>
+													<a href="#" class="btn bg-primary-transparent">Pendiente</a>
 												</div>
 											</div>
 										</div>
@@ -190,7 +192,7 @@
 									<div class="card p-0">
 										<div class="card-body p-0">
 											<div class="img-sec w-100">
-												<a href="service-details.html"><img src="assets/img/providers/provider-13.jpg" class="img-fluid rounded-top w-100" alt="img"></a>
+												<a href="service-details-cliente.html"><img src="assets/img/providers/provider-13.jpg" class="img-fluid rounded-top w-100" alt="img"></a>
 												<div class="image-tag d-flex justify-content-end align-items-center">
 													<span class="trend-tag">Alimentos y Bebidas</span>
 													<a href="javascript:void(0);" class="fav-icon like-icon"><i class="ti ti-heart"></i></a>
@@ -201,13 +203,13 @@
 											</div>
 											<div class="p-3">
 												<h5 class="mb-2">
-													<a href="service-details.html">Platillos para bodas</a>
+													<a href="service-details-cliente.html">Platillos para bodas</a>
 												</h5>
 												<div class="d-flex justify-content-between align-items-center mb-3">
 												</div>
 												<div class="d-flex justify-content-between align-items-center">
 													<h5>$25.00 <span class="fs-13 text-gray"></span></h5>
-													<a href="booking.html" class="btn bg-primary-transparent">Entregado</a>
+													<a href="#" class="btn bg-primary-transparent">Entregado</a>
 												</div>
 											</div>
 										</div>
@@ -230,6 +232,7 @@
 						</div>
 					</div>
 				</div>
+			</div>
 		</div>
 	</div>
 	<!-- /Page Wrapper -->

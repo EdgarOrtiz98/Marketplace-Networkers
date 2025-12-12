@@ -84,7 +84,9 @@
 				</div>
 				<ul class="nav header-navbar-rht">
 					<li class="nav-item pe-1">
-						<a class="nav-link btn btn-light" href="login.html" ><i class="ti ti-lock me-2"></i> Iniciar sesión</a>
+						<a id="botonLogin" class="nav-link btn btn-light" href="login.html">
+							<i class="ti ti-lock me-2"></i> Iniciar sesión
+						</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link btn btn-linear-primary" href="register.html" ><i class="ti ti-user-filled me-2"></i>Únete</a>
@@ -93,6 +95,19 @@
 			</nav>
 		</div>
 	</header>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const botonLogin = document.getElementById("botonLogin");
+			const rol = localStorage.getItem("rol");
+
+			if (rol) {
+				botonLogin.innerHTML = '<i class="ti ti-user me-2"></i> Mi Perfil';
+				botonLogin.href = "mi-perfil.html";  
+			}
+		});
+	</script>
+
 		<!-- /Cabecera -->
 	<section class="hero-section" id="home">
 			<div class="hero-content position-relative overflow-hidden">
@@ -140,6 +155,7 @@
 						</div>
 					</div>
 				</div>
+				<!-- /Sección Hero 
 				<div class="hero-image">
 					<div class="d-inline-flex bg-white p-2 rounded align-items-center shape-01 floating-x">
 						<span class="avatar avatar-md bg-warning rounded-circle me-2"><i class="ti ti-star-filled"></i></span>
@@ -151,7 +167,7 @@
 						<p class="fs-12 text-dark mb-0">+300 reservas completadas</p>
 						<i class="border-edge"></i>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</section>
 		<!-- /Sección Hero -->
@@ -373,7 +389,7 @@
 
 	
 	
-	<!-- Sección de Testimonios comentarios -->
+	<!-- Sección de Testimonios comentarios 
 	<section class="section testimonial-section">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -469,7 +485,7 @@
 			
 		</div>
 	</section>
-	<!-- /Sección de Testimonios -->
+	/Sección de Testimonios -->
 
     <!-- Sección de Negocios 	<section class="section business-section bg-black">
 		<div class="container">
