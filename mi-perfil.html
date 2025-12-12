@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8">
@@ -16,7 +16,7 @@
 	<!-- Tabler Icon CSS -->
 	<link rel="stylesheet" href="assets/plugins/tabler-icons/tabler-icons.css">
 
-	<!-- select CSS -->
+	<!-- Select CSS -->
 	<link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
 
 	<!-- Datatables CSS -->
@@ -46,8 +46,7 @@
 		<div class="container-fluid">
 			<nav class="navbar navbar-expand-lg header-nav">
 				<div class="navbar-header">
-					<a id="mobile_btn" href="javascript:void(0);">>
-					</a>
+					<a id="mobile_btn" href="javascript:void(0);"></a>
 					<a href="index.html" class="navbar-brand logo">
 						<img src="assets/img/logo.svg" class="logo" alt="Logo">
 					</a>
@@ -60,8 +59,11 @@
 						<a href="index.html" class="menu-logo">
 							<img src="assets/img/logo.jpg" class="img-fluid" alt="Logo">
 						</a>
-						<a id="menu_close" class="menu-close" href="javascript:void(0);"> <i class="fas fa-times"></i></a>
+						<a id="menu_close" class="menu-close" href="javascript:void(0);">
+							<i class="fas fa-times"></i>
+						</a>
 					</div>
+
 					<ul class="main-nav align-items-lg-center">
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html">Inicio</a>
@@ -70,10 +72,10 @@
                             <a class="nav-link" href="index.html#categorias">Categorías</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">Quiénes somos</a>
+                            <a class="nav-link" href="about-us.html">Quiénes Somos</a>
                          </li>
                          <li class="nav-item">
-                            <a class="nav-link" href="about-us.html#como-trabajamos">¿Cómo trabajamos?</a>
+                            <a class="nav-link" href="about-us.html#como-trabajamos">¿Cómo Trabajamos?</a>
                          </li>
 						 <li class="nav-item">
                             <a class="nav-link" href="favourites.html">Mis Pedidos</a>
@@ -84,11 +86,13 @@
 				<ul class="nav header-navbar-rht">
 					<li class="nav-item pe-1">
 						<a id="botonLogin" class="nav-link btn btn-light" href="login.html">
-							<i class="ti ti-lock me-2"></i> Iniciar sesión
+							<i class="ti ti-lock me-2"></i> Iniciar Sesión
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link btn btn-linear-primary" href="register.html" ><i class="ti ti-user-filled me-2"></i>Únete</a>
+						<a class="nav-link btn btn-linear-primary" href="register.html">
+                            <i class="ti ti-user-filled me-2"></i>Únete
+                        </a>
 					</li>
 				</ul>
 			</nav>
@@ -107,7 +111,7 @@
 		});
 	</script>
 
-		<!-- /Cabecera -->
+	<!-- /Cabecera -->
 
 	<!-- Breadcrumb -->
 	<div class="breadcrumb-bar text-center">
@@ -133,44 +137,55 @@
 		<div class="content">
 			<div class="container">
 				<div class="row justify-content-center">
+					
+                    <!-- Sidebar Usuario -->
 					<div class="col-xl-3 col-lg-4 theiaStickySidebar">
 						<div class="card user-sidebar mb-4 mb-lg-0">
+                            
                             <div class="card-header user-sidebar-header mb-4">
                                 <div class="d-flex justify-content-center align-items-center flex-column">
                                     <span class="user rounded-circle avatar avatar-xxl mb-2">
                                         <img src="assets/img/profiles/avatar-21.jpg" class="img-fluid rounded-circle" alt="Img">
                                     </span>
-                                    <h6 class="mb-2">juan sanchez</h6>
+                                    <h6 class="mb-2">Juan Sánchez</h6>
                                     <p class="fs-14">Miembro desde 2025</p>
                                 </div>
                             </div>
+
 							<div class="card-body user-sidebar-body p-0">
 								<ul>
-
                                     <li class="mb-0">
                                         <a href="login.html" class="d-flex align-items-center">
                                             <i class="ti ti-logout me-2"></i>
-                                            Cerrar Sesion
+                                            Cerrar Sesión
                                         </a>
                                     </li>
                                 </ul>
 							</div>
 						</div>
 					</div>
+
+                    <!-- Contenido Principal -->
 					<div class="col-xl-9 col-lg-8">
-                        <h4 class="mb-3"> Configuracion</h4>
-                        <h6 class="mb-4">Foto de perfil</h6>
+                        <h4 class="mb-3">Configuración</h4>
+
+                        <h6 class="mb-4">Foto de Perfil</h6>
                         <div class="d-flex align-items-center mb-4">
                             <span class="avatar avatar-xl me-2">
-                                <img src="assets/img/profiles/avatar-02.jpg" class="rounded-circle" alt="user">
+                                <img src="assets/img/profiles/avatar-02.jpg" class="rounded-circle" alt="Usuario">
                             </span>
                             <div>
-                                <a href="" class="btn btn-dark me-2 mb-2"><i class="feather-upload-cloud me-1">subir foto de perfil</i></a> 
-                                <a href="javascript:void(0);" class="btn btn-light mb-2">eliminar foto de perfil</a>
-                                <p>*El tipo de imagen debe ser jpg o png.</p>
+                                <a href="#" class="btn btn-dark me-2 mb-2">
+                                    <i class="feather-upload-cloud me-1"></i> Subir Foto de Perfil
+                                </a> 
+                                <a href="javascript:void(0);" class="btn btn-light mb-2">
+                                    Eliminar Foto de Perfil
+                                </a>
+                                <p>*El tipo de imagen debe ser JPG o PNG.</p>
                             </div>
                         </div>   
-                        <h6>General Information</h6>
+
+                        <h6>Información General</h6>
                         <div class="general-info mb-0">
 							<div class="row mb-4">
 								<div class="col-md-6">
@@ -179,51 +194,54 @@
 										<input type="text" class="form-control">
 									</div>
 								</div>
+
 								<div class="col-md-6">
 									<div class="mb-3">
-									<label class="form-label">Apellidos </label>
-									<input type="text" class="form-control" >
+									<label class="form-label">Apellidos</label>
+									<input type="text" class="form-control">
 									</div>
 								</div>
+
 								<div class="col-md-6">
 									<div class="mb-3">
-									<label class="form-label">Correo electronico</label>
+									<label class="form-label">Correo Electrónico</label>
 									<input type="email" class="form-control">
 									</div>
 								</div>
+
 								<div class="col-md-6">
 									<div class="mb-3">
-									<label class="form-label">Numero de Telefono</label>
+									<label class="form-label">Número de Teléfono</label>
 									<input type="text" class="form-control">
 									</div>
 								</div>
 							</div>
+
 							<div class="col-md-6">
 								<div class="mb-3">
 									<label class="form-label">Fecha de Nacimiento</label>
-									<div class=" input-icon position-relative">
+									<div class="input-icon position-relative">
 										<span class="input-icon-addon"><i class="ti ti-calendar"></i></span>
 										<input type="text" class="form-control datetimepicker" placeholder="dd-mm-yyyy">
 									</div>
 								</div>
 							</div>
-							
 						</div>
-                        <h6 class="user-title">Dirrecion </h6>
+
+                        <h6 class="user-title">Dirección</h6>
                         <div class="row">
 							<div class="col-md-12">
-								<div class=" mb-3">
+								<div class="mb-3">
 									<label class="form-label">Domicilio</label>
 									<input type="text" class="form-control">
 								</div>
 							</div>
+                        </div>
 
-                        </div>
                         <div class="acc-submit d-flex justify-content-end align-items-center">
-                        <a href="javascript:void(0);" class="btn btn-light me-2">Editar Perfil</a>
-                        <a href="javascript:void(0);" class="btn btn-dark">Guardar cambios</a>
+                            <a href="javascript:void(0);" class="btn btn-dark">Guardar Cambios</a>
                         </div>
-                        </div>
+
                     </div>
 				</div>
 			</div>
@@ -231,9 +249,8 @@
 	</div>
 	<!-- /Page Wrapper -->
 
-	<!-- footer -->
+	<!-- Footer -->
 	<footer>
-		
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
@@ -242,10 +259,10 @@
 							<p class="mb-2">Copyright &copy; 2025 - Todos los derechos reservados | Marketplace - Negocios en Red</p>
 							<ul class="menu-links mb-2">
 								<li>
-									<a href="terms-condition.html"> Términos y condiciones</a>
+									<a href="terms-condition.html">Términos y Condiciones</a>
 								</li>
 								<li>
-									<a href="privacy-policy.html">Políticas de privacidad</a>
+									<a href="privacy-policy.html">Política de Privacidad</a>
 								</li>
 							</ul>
 						</div>
@@ -253,41 +270,21 @@
 				</div>
 			</div>
 		</div>
-		
-
 	</footer>
-	<!-- /footer -->
 
-	<!-- /Cancel Appointment -->
-
-	<!-- Jquery JS -->
+	<!-- JS -->
 	<script src="assets/js/jquery-3.7.1.min.js"></script>
-
-	<!-- Bootstrap JS -->
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
-
-	<!-- Wow JS -->
 	<script src="assets/js/wow.min.js"></script>
-
-	<!-- select JS -->
 	<script src="assets/plugins/select2/js/select2.min.js"></script>
-
-	<!-- Sticky Sidebar JS -->
 	<script src="assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
 	<script src="assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
-
-	<!-- Datepicker Core JS -->
 	<script src="assets/plugins/moment/moment.js"></script>
     <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
-
-	<!-- Cursor JS -->
 	<script src="assets/js/cursor.js"></script>
-
-	<!-- Tagsinput JS -->
 	<script src="assets/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.js"></script>
-
-	<!-- Script JS -->
 	<script src="assets/js/script.js"></script>
+
 </body>
 
 </html>

@@ -37,6 +37,7 @@
 	
 <body>
 	
+	<!-- Cabecera -->
 	<header class="header header-new">
 		<div class="container-fluid">
 			<nav class="navbar navbar-expand-lg header-nav">
@@ -44,16 +45,16 @@
 					<a id="mobile_btn" href="javascript:void(0);">>
 					</a>
 					<a href="index.html" class="navbar-brand logo">
-						<img src="assets/img/logo.jpg" class="logo" alt="Logo">
+						<img src="assets/img/logo.svg" class="logo" alt="Logo">
 					</a>
 					<a href="index.html" class="navbar-brand logo-small">
-						<img src="assets/img/logo.jpg" class="img-fluid" alt="Logo">
+						<img src="assets/img/logo.svg" class="img-fluid" alt="Logo">
 					</a>
 				</div>
 				<div class="main-menu-wrapper">
 					<div class="menu-header">
 						<a href="index.html" class="menu-logo">
-							<img src="assets/img/logo.jpg" class="img-fluid" alt="Logo">
+							<img src="assets/img/logo.svg" class="img-fluid" alt="Logo">
 						</a>
 						<a id="menu_close" class="menu-close" href="javascript:void(0);"> <i class="fas fa-times"></i></a>
 					</div>
@@ -65,7 +66,7 @@
                             <a class="nav-link" href="index.html#categorias">Categorías</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">Quiénes somos</a>
+                            <a class="nav-link" href="about-us.html">¿Quiénes somos?</a>
                          </li>
                          <li class="nav-item">
                             <a class="nav-link" href="about-us.html#como-trabajamos">¿Cómo trabajamos?</a>
@@ -78,7 +79,9 @@
 				</div>
 				<ul class="nav header-navbar-rht">
 					<li class="nav-item pe-1">
-						<a class="nav-link btn btn-light" href="login.html" ><i class="ti ti-lock me-2"></i> Iniciar sesión</a>
+						<a id="botonLogin" class="nav-link btn btn-light" href="login.html">
+							<i class="ti ti-lock me-2"></i> Iniciar sesión
+						</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link btn btn-linear-primary" href="register.html" ><i class="ti ti-user-filled me-2"></i>Únete</a>
@@ -87,7 +90,20 @@
 			</nav>
 		</div>
 	</header>
-		<!-- /Header -->
+
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const botonLogin = document.getElementById("botonLogin");
+			const rol = localStorage.getItem("rol");
+
+			if (rol) {
+				botonLogin.innerHTML = '<i class="ti ti-user me-2"></i> Mi Perfil';
+				botonLogin.href = "mi-perfil.html";  
+			}
+		});
+	</script>
+
+	<!-- /Cabecera -->
 
 	<!-- Breadcrumb -->
 	<div class="breadcrumb-bar text-center">
@@ -119,7 +135,6 @@
 								<div class="service-head mb-2">
 									<div class="d-flex align-items-center justify-content-between flex-wrap">
 										<h3 class="mb-2">Comida rapida</h3>
-										<span class="badge badge-purple-transparent mb-2"><i class="ti ti-calendar-check me-1"></i>6000+ </span>
 									</div>
 									<div class="d-flex align-items-center justify-content-between flex-wrap mb-2">
 										<div class="d-flex align-items-center flex-wrap">
@@ -265,29 +280,29 @@
 								<div class="d-flex align-items-center justify-content-between border-bottom mb-3">
 									<div class="d-flex align-items-center">
 										<div class="mb-3">											
-											<p class="fs-14 mb-0">Starts From</p>
+											<p class="fs-14 mb-0">Precio</p>
 											<h4><span class="display-6 fw-bold">$457</span><span class="text-decoration-line-through text-default"> $875</span></h4>
 										</div>
 									</div>
-									<span class="badge bg-success mb-3 d-inline-flex align-items-center fw-medium"><i class="ti ti-circle-percentage me-1"></i>50% Offer</span>
+									<span class="badge bg-success mb-3 d-inline-flex align-items-center fw-medium"><i class="ti ti-circle-percentage me-1"></i>50% Descuento</span>
 								</div>
-								<a href="booking.html" class="btn btn-lg btn-primary w-100 d-flex align-items-center justify-content-center mb-3"><i class="ti ti-calendar me-2"></i>Agendar servicio</a>
+								<a href="#" class="btn btn-lg btn-primary w-100 d-flex align-items-center justify-content-center mb-3"><i class="ti ti-calendar me-2"></i>Reservar</a>
 							</div>
 						</div>
 						<div class="card border-0">
 							<div class="card-body">
-								<h4 class="mb-3">Provedor del servicio</h4>
+								<h4 class="mb-3">Proveedor del servicio</h4>
 								<div class="provider-info text-center bg-light-500 p-3 mb-3">
 									<div class="avatar avatar-xl mb-3">
 										<img src="assets/img/profiles/avatar-02.jpg" alt="img" class="img-fluid rounded-circle">
 										<span class="service-active-dot"><i class="ti ti-check"></i></span>
 									</div>
 									<h5>Thomas Garcia</h5>
-									<p class="fs-14"><i class="ti ti-star-filled text-warning me-2"></i><span class="text-gray-9 fw-semibold">4.9</span> (255 reviews)</p>
+									<p class="fs-14"><i class="ti ti-star-filled text-warning me-2"></i></p>
 								</div>
 								<div class="d-flex align-items-center justify-content-between mb-3">
-									<h6 class="fs-16 fw-medium mb-0"><i class="ti ti-user text-default me-2"></i>miembro desde</h6>
-									<p>14 Apr 2023</p>
+									<h6 class="fs-16 fw-medium mb-0"><i class="ti ti-user text-default me-2"></i>Miembro desde</h6>
+									<p>14 Abril 2025</p>
 								</div>
 								<div class="d-flex align-items-center justify-content-between mb-3">
 									<h6 class="fs-16 fw-medium mb-0"><i class="ti ti-map-pin me-1"></i>Dirección</h6>
@@ -302,11 +317,11 @@
 									<p>+1 888 8XX XXXX</p>
 								</div>
 								<div class="d-flex align-items-center justify-content-between mb-3">
-									<h6 class="fs-16 fw-medium mb-0"><i class="ti ti-file-text me-1"></i>servicios publicados</h6>
+									<h6 class="fs-16 fw-medium mb-0"><i class="ti ti-file-text me-1"></i>Servicios publicados</h6>
 									<p>03</p>
 								</div>
 								<div class="d-flex align-items-center justify-content-between mb-3">
-									<h6 class="fs-16 fw-medium">redes sociales</h6>
+									<h6 class="fs-16 fw-medium">Redes sociales</h6>
 									<div class="d-flex align-items-center">
 										<div class="social-icon">
 											<a href="javascript:void(0);" class="me-2"><img src="assets/img/icons/fb.svg" class="img" alt="icon"></a>
@@ -374,7 +389,7 @@
 									<a href="terms-condition.html"> Términos y condiciones</a>
 								</li>
 								<li>
-									<a href="privacy-policy.html">Políticas de privacidad</a>
+									<a href="privacy-policy.html">Política de privacidad</a>
 								</li>
 							</ul>
 						</div>
@@ -387,535 +402,8 @@
 	</footer>
 	<!-- /footer -->
 
-	<!-- Provider Modal -->
-	<div class="modal fade" id="provider" tabindex="-1" aria-hidden="true">
-		<div class="modal-dialog modal-lg modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-header d-flex align-items-center justify-content-between">
-					<h5>Become a Provider</h5>
-					<a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i class="ti ti-circle-x-filled fs-20"></i></a>
-				</div>				
-				<div class="wizard-fieldset">
-					<div class="modal-body pb-0">
-						<ul class="d-flex align-items-center flex-wrap mb-1 border-bottom" id="providerwizard">
-							<li class="active d-flex align-items-center me-4 mb-3">
-								<span class="avatar avatar-md rounded me-2 border-bottom">1</span>
-								<h6 class="fs-16 fw-medium">Choose Category</h6>
-							</li>
-							<li class="d-flex align-items-center me-4 mb-3">
-								<span class="avatar avatar-md rounded me-2">2</span>
-								<h6 class="fs-16 fw-medium">Service Location</h6>
-							</li>
-							<li class="d-flex align-items-center me-4 mb-3">
-								<span class="avatar avatar-md rounded me-2">3</span>
-								<h6 class="fs-16 fw-medium">Personal Info</h6>
-							</li>
-							<li class="d-flex align-items-center mb-3">
-								<span class="avatar avatar-md rounded me-2">4</span>
-								<h6 class="fs-16 fw-medium">Confirmation</h6>
-							</li>
-						</ul>
-					</div>
-					<fieldset   class="first-field" id="first-field">
-						<div class="modal-body pb-1">
-							<div class="bg-light-300 p-3 br-10 text-center mb-4">
-								<h4>List your service & Get the leads around you</h4>
-								<p>List your service & Get the leads around you</p>
-							</div>
-							<div class="mb-3">
-								<label class="form-label">What type of Service do your Provide?</label>
-								<select class="select">
-									<option>Select Service</option>
-									<option>House Cleaning</option>
-									<option>Car Wash</option>
-								</select>
-							</div>
-							<div class="mb-2">
-								<label class="form-label">Popular Service Categories</label>
-								<div class="category-badge">
-									<span class="badge d-inline-flex align-items-center mb-2 me-2"><img src="assets/img/icons/service-icon-01.svg" alt="icon" class="me-2">Construction</span>
-									<span class="badge d-inline-flex align-items-center mb-2 me-2"><img src="assets/img/icons/service-icon-02.svg" alt="icon" class="me-2">Removals</span>
-									<span class="badge d-inline-flex align-items-center mb-2 me-2"><img src="assets/img/icons/service-icon-03.svg" alt="icon" class="me-2">Furniture Assembly</span>
-									<span class="badge d-inline-flex align-items-center mb-2 me-2"><img src="assets/img/icons/service-icon-04.svg" alt="icon" class="me-2">Electrical</span>
-									<span class="badge d-inline-flex align-items-center mb-2"><img src="assets/img/icons/service-icon-05.svg" alt="icon" class="me-2">Computer Service</span>
-								</div>
-							</div>
-						</div>
-						<div class="modal-footer text-end">
-							<a href="javascript:void(0);" class="btn btn-linear-primary next_btn">Get Started</a>
-						</div>
-					</fieldset>
-					<fieldset  class="second-field">
-						<div class="modal-body pb-1">
-							<div class="bg-light-300 p-3 br-10 text-center mb-4">
-								<h4>List your service & Get the leads around you</h4>
-								<p>List your service & Get the leads around you</p>
-							</div>
-							<div class="mb-4">
-								<label class="form-label">What type of Service do your Provide?</label>
-								<select class="select">
-									<option>Select Service</option>
-									<option selected>House Cleaning</option>
-									<option>Car Wash</option>
-								</select>
-							</div>
-							<div class="mb-2">
-								<label class="form-label">What type of Sub Services do your Provide?</label>
-								<div class="form-check ps-0">
-									<div class="form-checkbox d-inline-flex align-items-center mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service1" type="checkbox" id="service1" checked>
-										<label class="form-check-label ms-2" for="service1">
-											Commercial Property
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="service2">
-										<label class="form-check-label ms-2" for="service2">
-											Empty House Cleaning
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center active mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="service3" checked>
-										<label class="form-check-label ms-2" for="service3">
-											Glass Cleaning
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="service4">
-										<label class="form-check-label ms-2" for="service4">
-											Carpet washing
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center active mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="service5" checked>
-										<label class="form-check-label ms-2" for="service5">
-											Sofa Washing
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="service6">
-										<label class="form-check-label ms-2" for="service6">
-											Office Cleaning
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="service7">
-										<label class="form-check-label ms-2" for="service7">
-											Exterior Glass Cleaning
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="service8">
-										<label class="form-check-label ms-2" for="service8">
-											Shop Cleaning
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="service9">
-										<label class="form-check-label ms-2" for="service9">
-											Ironing Service
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="service10">
-										<label class="form-check-label ms-2" for="service10">
-											Bed Washing
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="modal-footer d-flex align-items-center justify-content-between">
-							<a href="javascript:void(0);" class="btn btn-light prev_btn"><i class="ti ti-arrow-left me-2"></i>Back</a>
-							<a href="javascript:void(0);" class="btn btn-linear-primary next_btn">Add Location<i class="ti ti-arrow-right ms-2"></i></a>
-						</div>
-					</fieldset>
-					<fieldset>
-						<div class="modal-body pb-1">
-							<div class="bg-light-300 p-3 br-10 text-center mb-4">
-								<h4>Where would you like to see leads from?</h4>
-								<p>Tell us the area you cover so we can show you leads for your location</p>
-							</div>
-							<div class="mb-3">
-								<label class="form-label">City</label>
-								<select class="select">
-									<option selected>Rochester</option>
-									<option>Wisbech</option>
-									<option>Marlow</option>
-								</select>
-							</div>
-							<div class="mb-3">
-								<label class="form-label">State</label>
-								<select class="select">
-									<option selected>Newyork</option>
-									<option>Fenland</option>
-									<option>Wycombe</option>
-								</select>
-							</div>
-							<div class="mb-3">
-								<label class="form-label">Country</label>
-								<select class="select">
-									<option selected>United States</option>
-									<option>United Kingdom</option>
-								</select>
-							</div>
-						</div>
-						<div class="modal-footer d-flex align-items-center justify-content-between">
-							<a href="javascript:void(0);" class="btn btn-light prev_btn"><i class="ti ti-arrow-left me-2"></i>Back</a>
-							<a href="javascript:void(0);" class="btn btn-linear-primary next_btn">Add Location<i class="ti ti-arrow-right ms-2"></i></a>
-						</div>
-					</fieldset>
-					<fieldset>
-						<div class="modal-body pb-1">
-							<div class="bg-light-300 p-3 br-10 text-center mb-4">
-								<h4>Some details about you</h4>
-								<p>You’re just a few steps away from viewing our House Cleaning leads</p>
-							</div>
-							<div class="row">
-								<div class="col-lg-6">
-									<div class="mb-3">
-										<label class="form-label">Your Name</label>
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="mb-3">
-										<label class="form-label">Company Name</label>
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="mb-3">
-										<label class="form-label">Email</label>
-										<input type="email" class="form-control">
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="mb-3">
-										<label class="form-label">Phone Number</label>
-										<input type="text" class="form-control">
-									</div>
-								</div>
-								<div class="col-lg-12">
-									<div class="form-check ps-0">
-										<label class="form-label d-block">Select Gender</label>
-										<div class="form-radio d-inline-flex align-items-center active mb-3 me-3">
-											<input class="form-check-input ms-0 mt-0" name="gender" type="radio" id="male" checked>
-											<label class="form-check-label ms-2" for="male">
-												Male
-											</label>
-										</div>
-										<div class="form-radio d-inline-flex align-items-center mb-3">
-											<input class="form-check-input ms-0 mt-0" name="gender" type="radio" id="female">
-											<label class="form-check-label ms-2" for="female">
-												Female
-											</label>
-										</div>
-									</div>
-									<div class="form-check ps-0">
-										<label class="form-label d-block">Does your company have a website?</label>
-										<div class="form-radio d-inline-flex align-items-center active mb-3 me-3">
-											<input class="form-check-input ms-0 mt-0" name="website" type="radio" id="yes" checked>
-											<label class="form-check-label ms-2" for="yes">
-												Yes
-											</label>
-										</div>
-										<div class="form-radio d-inline-flex align-items-center mb-3">
-											<input class="form-check-input ms-0 mt-0" name="website" type="radio" id="no">
-											<label class="form-check-label ms-2" for="no">
-												No
-											</label>
-										</div>
-									</div>
-									<div class="form-check ps-0">
-										<label class="form-label d-block">Does your company have a website?</label>
-										<div class="form-radio d-inline-flex align-items-center active mb-3 me-3">
-											<input class="form-check-input ms-0 mt-0" name="emp" type="radio" id="self" checked>
-											<label class="form-check-label ms-2" for="self">
-												Self-employed
-											</label>
-										</div>
-										<div class="form-radio d-inline-flex align-items-center mb-3 me-3">
-											<input class="form-check-input ms-0 mt-0" name="emp" type="radio" id="two">
-											<label class="form-check-label ms-2" for="two">
-												2–10
-											</label>
-										</div>
-										<div class="form-radio d-inline-flex align-items-center mb-3 me-3">
-											<input class="form-check-input ms-0 mt-0" name="emp" type="radio" id="three">
-											<label class="form-check-label ms-2" for="three">
-												11–50
-											</label>
-										</div>
-										<div class="form-radio d-inline-flex align-items-center mb-3 me-3">
-											<input class="form-check-input ms-0 mt-0" name="emp" type="radio" id="four">
-											<label class="form-check-label ms-2" for="four">
-												51–200
-											</label>
-										</div>
-										<div class="form-radio d-inline-flex align-items-center mb-3">
-											<input class="form-check-input ms-0 mt-0" name="emp" type="radio" id="more">
-											<label class="form-check-label ms-2" for="more">
-												200+
-											</label>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="modal-footer d-flex align-items-center justify-content-between">
-							<a href="javascript:void(0);" class="btn btn-light prev_btn"><i class="ti ti-arrow-left me-2"></i>Back</a>
-							<a href="javascript:void(0);" class="btn btn-linear-primary next_btn">Submit<i class="ti ti-arrow-right ms-2"></i></a>
-						</div>
-					</fieldset>
-					<fieldset>
-						<div class="modal-body pb-1">
-							<div class="bg-light-300 p-3 br-10 text-center mb-4">
-								<h4>Maximise your leads</h4>
-								<p>Add other services you can provide</p>
-							</div>
-							<div class="mb-3">
-								<label class="form-label d-block">What type of Sub Services do your Provide?</label>
-								<span class="badge bg-info fs-13 fw-medium">House Cleaning</span>
-							</div>
-							<div class="mb-2">
-								<label class="form-label">What type of Sub Services do your Provide?</label>
-								<div class="form-check ps-0">
-									<div class="form-checkbox d-inline-flex align-items-center mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service1" type="checkbox" id="services1">
-										<label class="form-check-label ms-2" for="services1">
-											Commercial Property
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="services2">
-										<label class="form-check-label ms-2" for="services2">
-											Empty House Cleaning
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center active mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="services3" checked>
-										<label class="form-check-label ms-2" for="services3">
-											Glass Cleaning
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="services4">
-										<label class="form-check-label ms-2" for="services4">
-											Carpet washing
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center active mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="services5" checked>
-										<label class="form-check-label ms-2" for="services5">
-											Sofa Washing
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="services6">
-										<label class="form-check-label ms-2" for="services6">
-											Office Cleaning
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="services7">
-										<label class="form-check-label ms-2" for="services7">
-											Exterior Glass Cleaning
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="services8">
-										<label class="form-check-label ms-2" for="services8">
-											Shop Cleaning
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="services9">
-										<label class="form-check-label ms-2" for="services9">
-											Ironing Service
-										</label>
-									</div>
-									<div class="form-checkbox d-inline-flex align-items-center mb-2 me-3">
-										<input class="form-check-input ms-0 mt-0" name="service" type="checkbox" id="services10">
-										<label class="form-check-label ms-2" for="services10">
-											Bed Washing
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="modal-footer d-flex align-items-center justify-content-end">
-							<a href="javascript:void(0);" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#success_modal" class="btn btn-linear-primary">Confirm & Submit</a>
-						</div>
-					</fieldset>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- /Provider Modal -->
 
-	<!-- Success Modal -->
-	<div class="modal fade" id="success_modal" tabindex="-1" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-body text-center">
-					<div class="mb-4">
-						<span class="success-icon mx-auto mb-4">
-							<i class="ti ti-check"></i>
-						</span>
-						<h4 class="mb-1">Registration Successful</h4>
-						<p>You will get a Verification link Via email for the Verify the  Account.</p>
-					</div>
-					<a href="javascript:void(0);" data-bs-dismiss="modal" class="btn btn-linear-primary">Close</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- /Success Modal -->
-
-	<!-- Add Review -->
-	<div class="modal fade" id="add-review" tabindex="-1" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-header d-flex align-items-center justify-content-between">
-					<h5>Add Review</h5>
-					<a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i class="ti ti-circle-x-filled fs-20"></i></a>
-				</div>		
-				<form action="service-details.html">
-					<div class="modal-body">
-						<div class="mb-3">
-							<label class="form-label">Rate your Review</label>
-							<div class="rating-select mb-0">
-								<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
-								<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
-								<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
-								<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
-								<a href="javascript:void(0);"><i class="fas fa-star"></i></a>
-							</div>
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Review Title</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Email Address</label>
-							<input type="email" class="form-control">
-						</div>
-						<div class="mb-0">
-							<label class="form-label">Write Your Review</label>
-							<textarea class="form-control" rows="3"></textarea>
-						</div>
-					</div>
-					<div class="modal-footer d-flex align-items-center justify-content-end">
-						<a href="javascript:void(0);" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</a>
-						<button type="submit" class="btn btn-primary">Submit</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	<!-- /Add Review -->
-
-	<!-- Add Enquiry -->
-	<div class="modal fade" id="add-enquiry" tabindex="-1" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-header d-flex align-items-center justify-content-between">
-					<h5>Enquiry</h5>
-					<a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i class="ti ti-circle-x-filled fs-20"></i></a>
-				</div>		
-				<form action="service-details.html">
-					<div class="modal-body">
-						<div class="bg-light-500 p-3 mb-3 br-10">
-							<div class="d-flex align-items-center">
-								<span class="avatar avatar-xl">
-									<img src="assets/img/services/rated-service-02.jpg" alt="img" class="img-fluid br-10">
-								</span>
-								<div class="ms-2">
-									<h6 class="fs-14 fw-medium mb-1">Lighting Services</h6>
-									<p><i class="ti ti-star-filled text-warning me-2"></i><span class="text-gray-9">4.9</span>(255 reviews)</p>
-								</div>
-							</div>
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Name</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Email Address</label>
-							<input type="email" class="form-control">
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Phone Number</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="mb-0">
-							<label class="form-label">Write us a Message</label>
-							<textarea class="form-control" rows="3"></textarea>
-						</div>
-					</div>
-					<div class="modal-footer d-flex align-items-center justify-content-end">
-						<a href="javascript:void(0);" class="btn btn-light me-2">Cancel</a>
-						<button type="submit" class="btn btn-primary">Submit</button>
-					</div>
-				</form>				
-			</div>
-		</div>
-	</div>
-	<!-- /Add Enquiry -->
-
-	<!-- Add Contact -->
-	<div class="modal fade" id="add-contact" tabindex="-1" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-header d-flex align-items-center justify-content-between">
-					<h5>Contact Provider</h5>
-					<a href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close"><i class="ti ti-circle-x-filled fs-20"></i></a>
-				</div>		
-				<form action="service-details.html">
-					<div class="modal-body">
-						<div class="bg-light-500 p-3 mb-3 br-10">
-							<div class="d-flex align-items-center">
-								<span class="avatar avatar-xl">
-									<img src="assets/img/profiles/avatar-01.jpg" alt="img" class="img-fluid rounded-circle">
-								</span>
-								<div class="ms-2">
-									<h6 class="fs-14 fw-medium mb-1">Thomas Herzberg</h6>
-									<p><i class="ti ti-star-filled text-warning me-2"></i><span class="text-gray-9">4.9</span> (255 reviews)</p>
-								</div>
-							</div>
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Name</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Email Address</label>
-							<input type="email" class="form-control">
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Phone Number</label>
-							<input type="text" class="form-control">
-						</div>
-						<div class="mb-0">
-							<label class="form-label">Write us a Message</label>
-							<textarea class="form-control" rows="3"></textarea>
-						</div>
-					</div>
-					<div class="modal-footer d-flex align-items-center justify-content-end">
-						<a href="javascript:void(0);" class="btn btn-light me-2"  data-bs-dismiss="modal">Cancel</a>
-						<button type="submit" class="btn btn-primary">Submit</button>
-					</div>
-				</form>				
-			</div>
-		</div>
-	</div>
-	<!-- /Add Contact -->					
-
-	<div class="back-to-top">
-		<a class="back-to-top-icon align-items-center justify-content-center d-flex"  href="#top"><i class="fa-solid fa-arrow-up"></i></a>
-	</div>	
-
+	
 	<!-- Cursor -->
 	<div class="xb-cursor tx-js-cursor">
         <div class="xb-cursor-wrapper">
