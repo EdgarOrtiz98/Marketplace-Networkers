@@ -1,7 +1,7 @@
 const usuarios = [
     { usuario: "admin", password: "1234", rol: "admin" },
-    { usuario: "cliente", password: "abcd", rol: "usuario" },
-    { usuario: "networker", password: "12345678", rol: "networker" }
+    { usuario: "cliente", password: "1234", rol: "usuario" },
+    { usuario: "networker", password: "1234", rol: "networker" }
 ];
 
 document.getElementById("loginForm").addEventListener("submit", function(e){
